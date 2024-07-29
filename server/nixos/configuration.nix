@@ -32,7 +32,7 @@ in
 	networking = {
 		networkmanager = {
 			enable = true;
-			insertNameservers = [ "1.1.1.1" ];
+			insertNameservers = [ "192.168.0.1" ];
 		};
 		hostName = "nixos-server";
 		useDHCP = false;
