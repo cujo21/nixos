@@ -44,7 +44,7 @@ in
 	services.openssh = {
 		enable = true;
 		settings = {
-			UseDns = true;
+			UseDns = false;
 			PasswordAuthentication = false;
 		};
 	};
