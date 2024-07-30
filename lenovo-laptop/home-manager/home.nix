@@ -32,6 +32,8 @@
 			speedtest-cli
 			rpi-imager
 			wget
+			busybox
+			rar
 		];
 	};
 	
