@@ -13,6 +13,10 @@
 			radarr_update = "docker exec -it recyclarr recyclarr sync -c /config/radarr.yml";
 			anime_update = "docker exec -it recyclarr recyclarr sync -c /config/sonarr_anime.yml";
                 };
+		
+		bashrcExtra = ''
+			export PATH="/home/cujo/.local/bin:$PATH"
+		'';
 			
         };
 
