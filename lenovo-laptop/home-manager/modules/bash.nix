@@ -10,7 +10,8 @@
                         hms = "home-manager switch --flake '${flakePath}#cujo'";
 			rebuild = "sudo nixos-rebuild switch --flake '${flakePath}#nixos'";
 			v = "nvim";
-			lookgc = "looking-glass-client -m 97"; 
+			lookgc = "looking-glass-client -m 97";
+			ls = "ls -l"; 
                 };
         };
 
