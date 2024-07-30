@@ -93,6 +93,11 @@ in
 				to 192.168.0.104:9000
 			} 
 		'';
+		virtualHosts."jellyfin-vue.95661601.xyz".extraConfig = ''
+			reverse_proxy {
+				to 192.168.0.104:9001
+			}
+		'';
 
     	};
 		  
