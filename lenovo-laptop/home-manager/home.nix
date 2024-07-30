@@ -34,6 +34,7 @@
 			wget
 			busybox
 			rar
+			flameshot
 		];
 	};
 	
