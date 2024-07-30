@@ -18,7 +18,6 @@
 			looking-glass-client
 			ungoogled-chromium
 			spotify
-			easyeffects
 			vscodium
 			logseq
 			git
