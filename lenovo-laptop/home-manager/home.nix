@@ -33,7 +33,8 @@
 			wget
 			busybox
 			rar
-			flameshot	
+			flameshot
+			libreoffice	
 		];
 	};
 	
