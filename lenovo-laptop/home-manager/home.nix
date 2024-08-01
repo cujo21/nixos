@@ -36,7 +36,8 @@
 			flameshot
 			libreoffice
 			filezilla
-			ffmpeg	
+			ffmpeg
+			parted	
 		];
 	};
 	
