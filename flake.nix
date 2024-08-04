@@ -8,9 +8,11 @@
                         url = "github:nix-community/home-manager";
                         inputs.nixpkgs.follows = "nixpkgs";
                 };
+	
+		nix-flatpak.url = "github:gmodena/nix-flatpak";
         };
 
-        outputs = { self, nixpkgs, home-manager, ... }:
+        outputs = { self, nixpkgs, home-manager, nix-flatpak, ... }:
                 let 
                         system = "x86_64-linux";
                 in {
@@ -23,7 +25,10 @@
 
                 homeConfigurations.cujo = home-manager.lib.homeManagerConfiguration {
                         pkgs = nixpkgs.legacyPackages.${system};
-                        modules = [ ./lenovo-laptop/home-manager/home.nix ];
+                        modules = [
+				 nix-flatpak.homeManagerModules.nix-flatpak
+				 ./lenovo-laptop/home-manager/home.nix 
+				];
                         };
 
                 nixosConfigurations.nixos-server = nixpkgs.lib.nixosSystem {

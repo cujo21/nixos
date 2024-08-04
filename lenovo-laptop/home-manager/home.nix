@@ -17,7 +17,7 @@
 			mpv
 			looking-glass-client
 			ungoogled-chromium
-			spotify
+			#spotify
 			vscodium
 			logseq
 			git
@@ -55,5 +55,14 @@
         nixpkgs.config.permittedInsecurePackages = [
                 "electron-27.3.11"
         ];
+	
+	
+	services.flatpak = {
+		enable = true;
+		packages = [
+			{ appId = "com.spotify.Client"; origin = "flathub";  }
+			
+	  		];
+	};
 	
 }
