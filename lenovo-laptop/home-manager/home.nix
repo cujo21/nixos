@@ -37,7 +37,8 @@
 			libreoffice
 			filezilla
 			ffmpeg
-			parted	
+			parted
+			element-desktop	
 		];
 	};
 	
