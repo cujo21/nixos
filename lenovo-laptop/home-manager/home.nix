@@ -19,7 +19,7 @@
 			ungoogled-chromium
 			#spotify
 			vscodium
-			logseq
+			#logseq
 			git
 			noto-fonts-cjk-sans
 			speedtest-cli
@@ -60,8 +60,9 @@
 	services.flatpak = {
 		enable = true;
 		packages = [
-			{ appId = "com.spotify.Client"; origin = "flathub";  }
+			{ appId = "com.spotify.Client"; origin = "flathub"; }
 			
+			"com.logseq.Logseq"
 	  		];
 	};
 	
