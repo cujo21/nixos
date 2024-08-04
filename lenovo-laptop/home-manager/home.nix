@@ -38,7 +38,8 @@
 			filezilla
 			ffmpeg
 			parted
-			element-desktop	
+			element-desktop
+			brave	
 		];
 	};
 	
