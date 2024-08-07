@@ -22,6 +22,9 @@
 		bashrcExtra = ''
 			export PS1="\u@\H :"
 		'';
+		initExtra = ''
+			source ~/.bashrc
+		'';
 	}; 
 
 }
