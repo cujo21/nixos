@@ -21,7 +21,7 @@
 				bash_custom = "source /data/data/com.termux.nix/files/home/.bashrc";
 			};
 		bashrcExtra = ''
-			export PS1="\w:"
+			export PS1="\e[0;32m[\W:]\$ \e[0m
 		'';
 	}; 
 
