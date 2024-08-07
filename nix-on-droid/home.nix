@@ -18,9 +18,9 @@
 			{
 				rebuild = "nix-on-droid switch --flake '${flakePath}#android";
 			};
-		bashrcExtra = "
+		bashrcExtra = ''
 			PS1="\u@\H :"
-		";
+		'';
 	}; 
 
 }
