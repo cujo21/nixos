@@ -9,15 +9,16 @@
 			fastfetch
 			];
 	};
+
 	programs.bash = {
 		enable = true;
-		#shellAlliases = 
-		#let 
-		#	flakePath = "/data/data/com.termux.nix/files/home";
-		#in 
-		#	{
-		#		rebuild = "nix-on-droid switch --flake '${flakePath}#android";
-		#	};
+		shellAlliases = 
+		let 
+			flakePath = "/data/data/com.termux.nix/files/home";
+		in 
+			{
+				rebuild = "nix-on-droid switch --flake '${flakePath}#android'";
+			};
 		bashrcExtra = ''
 			PS1="\u@\H :"
 		'';
