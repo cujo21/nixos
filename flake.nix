@@ -36,14 +36,7 @@
 				 nix-flatpak.homeManagerModules.nix-flatpak
 				 ./lenovo-laptop/home-manager/home.nix 
 				];
-                        };
-
-		#homeConfigurations.android = home-manager.lib.homeManagerConfiguration {
-		#	pkgs = nixpkgs.legacyPackages.${android};
-		#	modules = [
-		#		./nix-on-droid/home.nix
-		#		];
-		#};		
+                        };		
 
                 nixosConfigurations.nixos-server = nixpkgs.lib.nixosSystem {
                         inherit system;
