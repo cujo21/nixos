@@ -12,7 +12,7 @@
 
 	programs.bash = {
 		enable = true;
-		shellAlliases = 
+		shellAliases = 
 		let 
 			flakePath = "/data/data/com.termux.nix/files/home";
 		in 
