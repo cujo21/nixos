@@ -14,16 +14,14 @@
 		enable = true;
 		shellAliases = 
 		let 
-			flakePath = "/data/data/com.termux.nix/files/home";
+			flakePath = "/data/data/com.termux.nix/files/home/nix";
 		in 
 			{
 				rebuild = "nix-on-droid switch --flake '${flakePath}#android'";
+				bash_custom = "source /data/data/com.termux.nix/files/home/.bashrc";
 			};
 		bashrcExtra = ''
 			export PS1="\u@\H :"
-		'';
-		initExtra = ''
-			source ~/.bashrc
 		'';
 	}; 
 
