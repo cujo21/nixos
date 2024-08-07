@@ -3,6 +3,7 @@
         description = "System Configuration";
         inputs = {
                 nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+		nixpkgs_android.url = "github:NixOS/nixpkgs/nixos-24.05";
 
                 home-manager = {
                         url = "github:nix-community/home-manager";
@@ -17,9 +18,10 @@
 	    	};
         };
 
-        outputs = { self, nixpkgs, home-manager, nix-flatpak, nix-on-droid, ... }:
+        outputs = { self, nixpkgs, home-manager, nix-flatpak, nix-on-droid, nixpkgs_android, ... }:
                 let 
                         system = "x86_64-linux";
+			android = "aarch64-linux";
                 in {
                 nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
                         inherit system;
@@ -36,6 +38,13 @@
 				];
                         };
 
+		#homeConfigurations.android = home-manager.lib.homeManagerConfiguration {
+		#	pkgs = nixpkgs.legacyPackages.${android};
+		#	modules = [
+		#		./nix-on-droid/home.nix
+		#		];
+		#};		
+
                 nixosConfigurations.nixos-server = nixpkgs.lib.nixosSystem {
                         inherit system;
                         modules = [ 
@@ -44,7 +53,7 @@
                 };
 
 		nixOnDroidConfigurations.android = nix-on-droid.lib.nixOnDroidConfiguration {
-			pkgs = import nixpkgs { system = "aarch64-linux"; };
+			pkgs = import nixpkgs_android { system = "aarch64-linux"; };
 			modules = [
 				./nix-on-droid/nix-on-droid.nix
 				];

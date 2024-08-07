@@ -25,6 +25,7 @@
     zip
     unzip
     git
+    home-manager	
   ];
 
   # Backup etc files instead of failing to activate generation if a file already exists in /etc
@@ -57,6 +58,7 @@
   #      # insert home-manager config
   #    };
   #};
+  home-manager.config = ./home.nix;
 }
 
 # vim: ft=nix
