@@ -6,8 +6,6 @@ pkgs.writeShellScriptBin "cujopush" ''
 	git add .
 	git commit -m $curdate
 	git push -u origin main
-	rebuild
-	hms
 ''
 
 
