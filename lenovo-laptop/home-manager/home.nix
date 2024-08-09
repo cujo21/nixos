@@ -40,7 +40,8 @@
 			parted
 			element-desktop
 			brave
-			obsidian	
+			#obsidian
+			qownnotes	
 		];
 	};
 	
