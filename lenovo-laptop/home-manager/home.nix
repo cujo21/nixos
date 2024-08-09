@@ -39,7 +39,8 @@
 			ffmpeg
 			parted
 			element-desktop
-			brave	
+			brave
+			obsidian	
 		];
 	};
 	
