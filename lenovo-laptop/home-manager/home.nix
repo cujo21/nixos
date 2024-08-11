@@ -67,6 +67,7 @@
 			{ appId = "com.spotify.Client"; origin = "flathub"; }
 			
 			"com.logseq.Logseq"
+			"com.anydesk.Anydesk"
 	  		];
 	};
 	
