@@ -66,6 +66,18 @@
 	system.nssModules = lib.mkForce []; 
 	
 	systemd.services.NetworkManager-wait-online.enable = false;
+	
+	hardware.bluetooth = {
+        	enable = true;
+                powerOnBoot = true;
+                settings = {
+                        General = {
+                                Enable = "Source,Sink,Media,Socket";
+                                Experimental = true;
+                        };
+                };
+        };
+
 
   # Set your time zone.
   time.timeZone = "Asia/Kolkata";
