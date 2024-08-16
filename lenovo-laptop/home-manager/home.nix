@@ -41,7 +41,8 @@
 			element-desktop
 			brave
 			#obsidian
-			qownnotes	
+			qownnotes
+			thunderbird	
 		];
 	};
 	
