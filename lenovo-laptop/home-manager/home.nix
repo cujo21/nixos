@@ -51,16 +51,12 @@
 		./bash/scripts.nix
 	];
 
-	  nixpkgs = {
-	    config = {
-	      allowUnfree = true;
-	      allowUnfreePredicate = (_: true);
-	    };
+	nixpkgs = {
+	  config = {
+	    allowUnfree = true;
+	    allowUnfreePredicate = (_: true);
 	  };
-        nixpkgs.config.permittedInsecurePackages = [
-                "electron-27.3.11"
-        ];
-	
+	};
 	
 	services.flatpak = {
 		enable = true;
