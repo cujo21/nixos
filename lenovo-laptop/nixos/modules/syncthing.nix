@@ -4,11 +4,6 @@
 		enable = true;
 		user = "cujo";
 		dataDir = "/home/cujo";
-
-		tray = {
-			enable = true;
-		};
-
 		systemService = true;
 
 		settings = {
