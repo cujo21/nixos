@@ -8,7 +8,7 @@
 			htop
 			firefox
 			keepassxc
-			syncthing
+			#syncthing
 			unzip 
 			zip
 			neovim
