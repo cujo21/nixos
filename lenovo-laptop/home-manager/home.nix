@@ -42,7 +42,7 @@
 			brave
 			#obsidian
 			qownnotes
-			thunderbird	
+			thunderbird
 		];
 	};
 	
