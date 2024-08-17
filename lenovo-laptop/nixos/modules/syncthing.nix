@@ -15,6 +15,18 @@
 					id = "3DPX6WI-GVOXCTD-XDB47WD-5KWBOEH-3LTKYKR-C35N6CF-EA3MSZL-OOBHZQD";
 				};
 			};
+			folders = {
+				"/home/cujo/keepass" = {
+					label = "keepass";
+					id = "rirxw-ffvwq";
+					devices = [ "server" ];
+				};
+				"/home/cujo/Logseq" = {
+					label = "Logseq";
+					id = "Logseq";
+					devices = [ "server" ];
+				};
+			};
 		};
 	};
 }
