@@ -43,6 +43,7 @@
 			#obsidian
 			qownnotes
 			thunderbird
+			payload-dumper-go
 		];
 	};
 	
