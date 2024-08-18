@@ -5,7 +5,7 @@
 		shellIntegration = {
 			enableBashIntegration = true;
 		};
-		theme = "Ubuntu";
+		theme = "Tomorrow Night Eighties";
 		font = {
 			name = "Monospace";
 			size = 10;
