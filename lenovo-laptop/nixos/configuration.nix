@@ -77,6 +77,8 @@
                         };
                 };
         };
+	
+	services.gollum.math.enable = true;
 
 
   # Set your time zone.
