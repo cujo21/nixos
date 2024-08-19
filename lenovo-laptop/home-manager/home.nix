@@ -44,6 +44,7 @@
 			qownnotes
 			thunderbird
 			payload-dumper-go
+			telegram-desktop
 		];
 	};
 	
