@@ -45,6 +45,7 @@
 			thunderbird
 			payload-dumper-go
 			telegram-desktop
+			wireguard-tools
 		];
 	};
 	
