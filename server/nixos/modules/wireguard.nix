@@ -41,11 +41,11 @@
       					postShutdown = ''
         					${pkgs.iptables}/bin/iptables -t nat -D POSTROUTING -s 10.100.1.0/24 -o enp1s0 -j MASQUERADE
       					'';
-					privateKeyFile = "/home/cujo/wireguard-keys/private";
+					privateKeyFile = "/home/cujo/wireguard-keys/private-53";
 					peers = [
 						{
 							# PC 
-							publicKey = "y5x3g/hDwqzqhC64nENtXO4tdweqjGrIglK1J1LscmI=";
+							publicKey = "32J1k4zmR9stwvJZV+Gl86W+3sDcPzsNASnC1fvEkTM=";
 							allowedIPs = [ "10.100.1.2/32" ];
 						}
 					];
