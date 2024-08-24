@@ -5,6 +5,7 @@
 	imports = [
 		./vm.nix
 		./syncthing.nix
+		./wireguard.nix
 	];
 
 
