@@ -167,7 +167,19 @@
   # List services that you want to enable:
 
   # Enable the OpenSSH daemon.
-  services.openssh.enable = true;
+	services.openssh = {
+		enable = true;
+  		settings = {
+			Ciphers = [
+  				"chacha20-poly1305@openssh.com"
+  				"aes256-gcm@openssh.com"
+  				"aes128-gcm@openssh.com"
+  				"aes256-ctr"
+  				"aes192-ctr"
+  				"aes128-ctr"
+			];
+		};
+	}; 	
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
