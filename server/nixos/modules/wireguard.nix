@@ -2,6 +2,7 @@
 {
 
 	  # enable NAT
+  networking.nat.enable = true;
   networking.nat.externalInterface = "enp1s0";
   networking.nat.internalInterfaces = [ "wg0" ];
   #networking.firewall = {
