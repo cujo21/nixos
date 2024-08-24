@@ -46,6 +46,7 @@ in
 		settings = {
 			UseDns = false;
 			PasswordAuthentication = false;
+			GatewayPorts = true;
 		};
 	};
 			
