@@ -9,6 +9,7 @@
   #  allowedUDPPorts = [ 51820 ];
   #};
 
+  networking.wireguard.enable = true;	
   networking.wireguard.interfaces = {
     # "wg0" is the network interface name. You can name the interface arbitrarily.
     wg0 = {
