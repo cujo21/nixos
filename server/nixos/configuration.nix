@@ -44,10 +44,11 @@ in
 	services.openssh = {
 		enable = true;
 		ports = [ 22 ];
-		PermitRootLogin = "no";
+		
 		settings = {
 			UseDns = false;
 			PasswordAuthentication = false;
+			PermitRootLogin = "no";
 		};
 	};
 			
