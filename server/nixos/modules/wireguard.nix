@@ -1,6 +1,6 @@
 { pkgs, ...} : 
 {
-  	networking.nate = {
+  	networking.nat = {
 		enable = true;
   		externalInterface = "enp1s0";
   		internalInterfaces = [ "wg0" "wg53" ];
