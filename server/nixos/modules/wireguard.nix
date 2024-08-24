@@ -27,6 +27,8 @@
 	  						# PC   
           						publicKey = "y5x3g/hDwqzqhC64nENtXO4tdweqjGrIglK1J1LscmI=";
           						allowedIPs = [ "10.100.0.2/32" ];
+						}
+						{
 							# Mobile
 							publicKey = "2SCkbWqH/LBCq9+JhxWBT1mY9UhG5MI0ZL5mRotxjRQ=";
 							allowedIPs = [ "10.100.0.3/32" ];
@@ -50,6 +52,8 @@
 							# PC 
 							publicKey = "32J1k4zmR9stwvJZV+Gl86W+3sDcPzsNASnC1fvEkTM=";
 							allowedIPs = [ "10.100.1.2/32" ];
+						}
+						{
 							# Mobile 
 							publicKey = "9lNEApsiDpmp6WfUDyWSRsTLX9RMxnHHpboIfk9wMnM=";
 							allowedIPs = [ "10.100.1.3/32" ];
