@@ -43,7 +43,7 @@ in
 	
 	services.openssh = {
 		enable = true;
-		port = 22;
+		ports = [ 22 ];
 		permitRootLogin = "no";
 		settings = {
 			UseDns = false;
