@@ -56,7 +56,7 @@
 			wifi = {
 				powersave = false;
 			};
-			insertNameservers = [ "192.168.0.1" ];
+			insertNameservers = [ "1.1.1.1" ];
 		};
 		hostName = "nixos";
 		useDHCP = lib.mkDefault false;
@@ -167,7 +167,7 @@
   # List services that you want to enable:
 
   # Enable the OpenSSH daemon.
-  # services.openssh.enable = true;
+  services.openssh.enable = true;
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
