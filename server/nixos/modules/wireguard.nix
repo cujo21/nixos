@@ -33,7 +33,7 @@
         # List of allowed peers.
         { # Feel free to give a meaning full name
           # Public key of the peer (not a file path).
-          publicKey = "HqwPjw5qNo5A1IBMjdq1PqLvGY7hGxLBpTTGnOgC/Ts=";
+          publicKey = "y5x3g/hDwqzqhC64nENtXO4tdweqjGrIglK1J1LscmI=";
           # List of IPs assigned to this peer within the tunnel subnet. Used to configure routing.
           allowedIPs = [ "10.100.0.2/32" ];
         }
