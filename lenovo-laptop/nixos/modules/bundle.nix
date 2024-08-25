@@ -1,12 +1,8 @@
-{ configs, pkgs, ... }:
-
 {
 
 	imports = [
+		./syncthing.nix 
 		./vm.nix
-		./syncthing.nix
-		./wireguard.nix
 	];
-
 
 }
