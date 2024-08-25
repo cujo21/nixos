@@ -25,12 +25,12 @@
 				"/home/cujo/keepass" = {
 					label = "keepass";
 					id = "rirxw-ffvwq";
-					devices = [ "server" "oneplus_nameless" ];
+					devices = [ "server" ];
 				};
 				"/home/cujo/Logseq" = {
 					label = "Logseq";
 					id = "Logseq";
-					devices = [ "server" "oneplus_nameless" ];
+					devices = [ "server" ];
 				};
 			};
 		};
