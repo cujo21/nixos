@@ -2,7 +2,7 @@
 
 	imports = [
 		./bash.nix
-		./wireguard.nix
+		#./wireguard.nix
 	];
 
 }
