@@ -10,7 +10,6 @@
 			enable = true;	
   			interfaces = {
     				wg0 = {
-      
       					ips = [ "10.100.0.1/24" ];
       					listenPort = 51820;
 			
