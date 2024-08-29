@@ -10,14 +10,14 @@
 			enable = true;	
   			interfaces = {
     				wg0 = {
-      					ips = [ "10.100.2.1/24" ];
+      					ips = [ "10.100.0.1/24" ];
       					listenPort = 51820;
 			
       					postSetup = ''
-      						${pkgs.iptables}/bin/iptables -t nat -A POSTROUTING -s 10.100.2.0/24 -o enp1s0 -j MASQUERADE 
+      						${pkgs.iptables}/bin/iptables -t nat -A POSTROUTING -s 10.100.0.0/24 -o enp1s0 -j MASQUERADE 
       					'';
       					postShutdown = ''
-      						${pkgs.iptables}/bin/iptables -t nat -D POSTROUTING -s 10.100.2.0/24 -o enp1s0 -j MASQUERADE
+      						${pkgs.iptables}/bin/iptables -t nat -D POSTROUTING -s 10.100.0.0/24 -o enp1s0 -j MASQUERADE
       					'';
       					privateKeyFile = "/home/cujo/wireguard-keys/private";
 		
@@ -25,12 +25,12 @@
 						{
 	  						# PC   
           						publicKey = "y5x3g/hDwqzqhC64nENtXO4tdweqjGrIglK1J1LscmI=";
-          						allowedIPs = [ "10.100.2.2/32" ];
+          						allowedIPs = [ "10.100.0.2/32" ];
 						}
 						{
 							# Mobile
 							publicKey = "2SCkbWqH/LBCq9+JhxWBT1mY9UhG5MI0ZL5mRotxjRQ=";
-							allowedIPs = [ "10.100.2.3/32" ];
+							allowedIPs = [ "10.100.0.3/32" ];
        						}
       					];
     				};
