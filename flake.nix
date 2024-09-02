@@ -10,7 +10,8 @@
                 };
 	
 		nix-flatpak.url = "github:gmodena/nix-flatpak";
-        };
+
+	 };
 
         outputs = { self, nixpkgs, home-manager, nix-flatpak, ... } :
                 let 
@@ -35,10 +36,10 @@
                         pkgs = nixpkgs.legacyPackages.${system};
                         modules = [
 				 nix-flatpak.homeManagerModules.nix-flatpak
-				 ./lenovo-laptop/home-manager/home.nix 
+				 ./lenovo-laptop/home-manager/home.nix
 				];
                         };		
-        	};
+        };
 
 }
 
