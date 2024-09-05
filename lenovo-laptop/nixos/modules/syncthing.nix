@@ -14,23 +14,23 @@
 					];
 					id = "3DPX6WI-GVOXCTD-XDB47WD-5KWBOEH-3LTKYKR-C35N6CF-EA3MSZL-OOBHZQD";
 				};
-				oneplus_nameless = {
+				op11 = {
 					addresses = [
 						"dynamic"
 					];
-					id = "R5BLE7S-55SJKXX-SIXPVZ2-ZQLG5JE-HFDEPY4-UFWCQRZ-2DCHKWS-ZJJQ6Q4";
+					id = "7BOMYMD-RBWTCWI-OEGZCOX-GTVXC43-HT5Q5XM-BBV3B7S-GPA7OGJ-3XTYJQL";
 				};
 			};
 			folders = {
 				"/home/cujo/keepass" = {
 					label = "keepass";
 					id = "rirxw-ffvwq";
-					devices = [ "server" ];
+					devices = [ "server" "op11" ];
 				};
 				"/home/cujo/Logseq" = {
 					label = "Logseq";
 					id = "Logseq";
-					devices = [ "server" ];
+					devices = [ "server" "op11" ];
 				};
 			};
 		};
