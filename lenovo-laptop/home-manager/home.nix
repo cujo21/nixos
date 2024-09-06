@@ -27,7 +27,7 @@
 			qbittorrent
 			android-tools
 			finamp
-			freecad
+			#freecad
 			speedtest-cli
 			rpi-imager
 			wget
