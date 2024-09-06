@@ -68,6 +68,7 @@
 			
 			"com.logseq.Logseq"
 			"com.anydesk.Anydesk"
+			"org.onlyoffice.desktopeditors"
 	  		];
 	};
 	
