@@ -8,7 +8,7 @@
 			filetype indent on
 			syntax on
             		set number
-			set clipboard+=unnamedplus
+			
 	    	'';
 	};
 
