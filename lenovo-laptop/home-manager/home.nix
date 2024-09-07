@@ -40,7 +40,7 @@
 			parted
 			element-desktop
 			brave
-			#obsidian
+			obsidian
 			qownnotes
 			thunderbird
 			payload-dumper-go
