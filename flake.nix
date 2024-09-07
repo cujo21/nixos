@@ -10,15 +10,9 @@
                 };
 	
                 nix-flatpak.url = "github:gmodena/nix-flatpak";
-
-                nixvim = {
-                  url = "github:nix-community/nixvim";
-                  # If using a stable channel you can use `url = "github:nix-community/nixvim/nixos-<version>"`
-                  inputs.nixpkgs.follows = "nixpkgs";
-                };
         };
 
-        outputs = { self, nixpkgs, home-manager, nix-flatpak, nixvim, ... } :
+        outputs = { self, nixpkgs, home-manager, nix-flatpak, ... } :
                 let 
                         system = "x86_64-linux";
                 in {
@@ -41,7 +35,6 @@
                         pkgs = nixpkgs.legacyPackages.${system};
                         modules = [
                           nix-flatpak.homeManagerModules.nix-flatpak
-                          nixvim.homeManagerModules.nixvim
                           ./lenovo-laptop/home-manager/home.nix
 			  ];
                         };		
