@@ -5,7 +5,7 @@
 		shellIntegration = {
 			enableBashIntegration = true;
 		};
-		theme = "Tomorrow Night Eighties";
+		theme = "Monokai Soda";
 		font = {
 			name = "Monospace";
 			size = 11;
@@ -16,7 +16,7 @@
 			remember_window_size  no
 			initial_window_width  1280
 			initial_window_height 720
-			hide_window_decorations no
+			hide_window_decorations yes
 
 			# Tab bar
 
