@@ -15,9 +15,9 @@
 			# Window layout
 
 			remember_window_size  no
-			initial_window_width  1280
-			initial_window_height 720
-			hide_window_decorations no
+			initial_window_width  1920
+			initial_window_height 1080
+			hide_window_decorations yes
 
 			# Tab bar
 

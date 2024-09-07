@@ -5,10 +5,12 @@
     vimAlias = true;
 
     plugins = with pkgs.vimPlugins; [ 
-      
-      lightline-vim
-      nerdtree
       vim-devicons
+      lightline-vim
+      {
+	plugin = nerdtree;
+	config = "let g:NERDTreeWinSize=50";
+      }
       {
 	plugin = gruvbox-nvim;
 	config = "colorscheme gruvbox";
@@ -25,7 +27,6 @@
       syntax on
       set number
       set autoindent
-      set smartindent
       set clipboard+=unnamedplus
       set encoding=UTF-8
       let mapleader = " "
@@ -34,11 +35,19 @@
       nnoremap <C-t> :NERDTreeToggle
       nnoremap <C-f> :NERDTreeFind
       nnoremap <S-t> :terminal
-     
+
       autocmd VimEnter * NERDTree
       autocmd VimEnter * NERDTree | wincmd p
+
+      autocmd StdinReadPre * let s:std_in=1
+      autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | NERDTree | endif
+
+      autocmd StdinReadPre * let s:std_in=1
+      autocmd VimEnter * NERDTree | if argc() > 0 || exists("s:std_in") | wincmd p | endif
+
       autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | call feedkeys(":quit\<CR>:\<BS>") | endif
       autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | call feedkeys(":quit\<CR>:\<BS>") | endif
+
       '';
     };
 }

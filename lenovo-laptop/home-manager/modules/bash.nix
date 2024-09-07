@@ -11,7 +11,7 @@
 			rebuild = "sudo nixos-rebuild switch --flake '${flakePath}#nixos'";
 			v = "nvim";
 			lookgc = "looking-glass-client -m 97"; 
-                };
+		};
         };
 
 }
