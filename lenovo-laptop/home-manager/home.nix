@@ -11,7 +11,7 @@
 			#syncthing
 			unzip 
 			zip
-			neovim
+			#neovim
 			tree
 			pciutils
 			mpv
@@ -46,6 +46,7 @@
 			payload-dumper-go
 			telegram-desktop
 			wireguard-tools
+			wl-clipboard
 		];
 	};
 	
