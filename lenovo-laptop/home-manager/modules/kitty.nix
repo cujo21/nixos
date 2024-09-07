@@ -5,12 +5,13 @@
 		shellIntegration = {
 			enableBashIntegration = true;
 		};
-		theme = "Monokai Soda";
+
 		font = {
 			name = "Monospace";
 			size = 11;
 		};
 		extraConfig = "
+			include /home/cujo/nix/lenovo-laptop/home-manager/modules/kitty_gruvbox_dark.conf
 			# Window layout
 
 			remember_window_size  no
