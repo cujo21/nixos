@@ -47,6 +47,7 @@
 			telegram-desktop
 			wireguard-tools
 			wl-clipboard
+			timg
 		];
 	};
 	

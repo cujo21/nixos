@@ -8,6 +8,7 @@
       
       lightline-vim
       nerdtree
+      vim-devicons
       {
 	plugin = gruvbox-nvim;
 	config = "colorscheme gruvbox";
@@ -24,13 +25,16 @@
       syntax on
       set number
       set autoindent
+      set smartindent
       set clipboard+=unnamedplus
+      set encoding=UTF-8
+      let mapleader = " "
 
       nnoremap <C-n> :NERDTree
       nnoremap <C-t> :NERDTreeToggle
       nnoremap <C-f> :NERDTreeFind
-      nnoremap <S-n> :NERDTreeFocus
-
+      nnoremap <S-t> :terminal
+     
       autocmd VimEnter * NERDTree
       autocmd VimEnter * NERDTree | wincmd p
       autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | call feedkeys(":quit\<CR>:\<BS>") | endif
