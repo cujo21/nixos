@@ -21,7 +21,7 @@
 			# Tab bar
 
 			tab_bar_style powerline
-			tab_bar_align center
+			tab_bar_align center	
 		"; 
 	};
 
