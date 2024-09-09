@@ -7,6 +7,12 @@
     plugins = with pkgs.vimPlugins; [ 
       vim-devicons
       lightline-vim
+      markdown-nvim
+      markdown-preview-nvim
+      nvim-treesitter.withAllGrammars
+      nvim-treesitter-textobjects
+      nvim-treesitter-endwise
+      oil-nvim
       {
 	plugin = nerdtree;
 	config = "let g:NERDTreeWinSize=50";
@@ -26,6 +32,7 @@
       filetype indent on
       syntax on
       set number
+      set relativenumber
       set autoindent
       set clipboard+=unnamedplus
       set encoding=UTF-8

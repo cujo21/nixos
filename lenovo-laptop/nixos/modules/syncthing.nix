@@ -18,7 +18,7 @@
 					addresses = [
 						"dynamic"
 					];
-					id = "7BOMYMD-RBWTCWI-OEGZCOX-GTVXC43-HT5Q5XM-BBV3B7S-GPA7OGJ-3XTYJQL";
+				  id = "5SBLXSE-UL27V7V-XA3Y5S6-DNTFM4K-KE75BTL-AS6Z27F-AD66Y77-CHRVVA3";
 				};
 			};
 			folders = {
@@ -31,6 +31,11 @@
 					label = "Logseq";
 					id = "Logseq";
 					devices = [ "server" "op11" ];
+				};
+				"/home/cujo/notes-md" = {
+				  label = "notes-md";
+				  id = "notes-md";
+				  devices = [ "server" ];
 				};
 			};
 		};
