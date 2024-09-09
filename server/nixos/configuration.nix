@@ -62,8 +62,6 @@ in
 			};
 		};
 	};
-
-  services.immich.enable = true;
 	
 	services.caddy = {
 		enable = true;
