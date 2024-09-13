@@ -154,7 +154,7 @@ in
     git
     cujopush 
     speedtest-cli
-    pipx
+    pip
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

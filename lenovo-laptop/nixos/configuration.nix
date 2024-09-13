@@ -44,7 +44,8 @@
 
   #networking.hostName = "nixos"; # Define your hostname.
   # Pick only one of the below networking options.
-  # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
+  #networking.wireless.enable = true;  # Enables` wireless support via wpa_supplicant.
+  #networking.networkmanager.unmanaged = [ "wlan0" ];
   # networking.networkmanager.enable = true;  # Easiest to use and most distros use this by default.
   #services.avahi.enable = true;
   #services.avahi.nssmdns4 = false;
@@ -104,10 +105,26 @@
   services.flatpak.enable = true;
 
   # KDE INSTALLATION
+  #services.xserver.enable = true;
+  #services.displayManager.sddm.enable = true;
+  services.desktopManager.plasma6.enable = true;
+
+  #Hyprland 
+
   services.xserver.enable = true;
   services.displayManager.sddm.enable = true;
-  services.desktopManager.plasma6.enable = true;
-	
+  programs.hyprland.enable = true;
+  #programs.kitty.enable = true;
+  environment.sessionVariables.NIXOS_OZONE_WL = "1";
+  
+  programs.thunar.enable = true;
+  programs.xfconf.enable = true;
+  programs.thunar.plugins = with pkgs.xfce; [
+    thunar-archive-plugin
+    thunar-volman
+  ];
+  services.gvfs.enable = true; # Mount, trash, and other functionalities
+  services.tumbler.enable = true; # Thumbnail support for images
 
 
   # DELETE OLDER THAN 30DAYS 
@@ -149,6 +166,10 @@
      home-manager
      inter
   #   wget
+     kdePackages.filelight
+     iwd
+     xdg-desktop-portal
+     xdg-desktop-portal-gnome
   ];
   
   #VIRT-MANAGER	

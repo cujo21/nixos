@@ -19,7 +19,7 @@
 			ungoogled-chromium
 			#spotify
 			vscodium
-			#logseq
+			logseq
 			git
 			noto-fonts-cjk-sans
 			speedtest-cli
@@ -33,21 +33,22 @@
 			wget
 			busybox
 			rar
-			flameshot
-			libreoffice
-			filezilla
+			#flameshot
+			#libreoffice
+			#filezilla
 			ffmpeg
 			parted
-			element-desktop
+			#element-desktop
 			brave
-			obsidian
-			qownnotes
+			#obsidian
+			#qownnotes
 			thunderbird
 			payload-dumper-go
 			telegram-desktop
 			wireguard-tools
 			wl-clipboard
 			timg
+			easyeffects
 		];
 	};
 	
@@ -63,15 +64,15 @@
 	  };
 	};
 	
-	services.flatpak = {
-		enable = true;
-		packages = [
-			{ appId = "com.spotify.Client"; origin = "flathub"; }
-			
-			"com.logseq.Logseq"
-			"com.anydesk.Anydesk"
-			"org.onlyoffice.desktopeditors"
-	  		];
-	};
+	#services.flatpak = {
+	#	enable = true;
+	#	packages = [
+	#		{ appId = "com.spotify.Client"; origin = "flathub"; }
+	#		
+	#		"com.logseq.Logseq"
+	#		"com.anydesk.Anydesk"
+	#		"org.onlyoffice.desktopeditors"
+	# 		];
+	#};
 	
 }

@@ -10,9 +10,10 @@
                 };
 	
                 nix-flatpak.url = "github:gmodena/nix-flatpak";
+		hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
         };
 
-        outputs = { self, nixpkgs, home-manager, nix-flatpak, ... } :
+        outputs = { self, nixpkgs, home-manager, nix-flatpak, hyprland, ... } @inputs :
                 let 
                         system = "x86_64-linux";
                 in {
@@ -35,6 +36,12 @@
                         pkgs = nixpkgs.legacyPackages.${system};
                         modules = [
                           nix-flatpak.homeManagerModules.nix-flatpak
+			  {
+			    wayland.windowManager.hyprland = {
+			      enable = true;
+			      package = inputs.hyprland.packages.${system}.hyprland;
+			    };
+			  }
                           ./lenovo-laptop/home-manager/home.nix
 			  ];
                         };		
