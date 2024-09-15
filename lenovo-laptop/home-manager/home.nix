@@ -50,7 +50,7 @@
 			timg
 			easyeffects
 			onlyoffice-bin
-
+			discord
 		];
 	};
 	

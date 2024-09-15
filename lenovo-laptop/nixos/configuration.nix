@@ -204,6 +204,7 @@
     proggyfonts
     font-awesome
     nerdfonts
+    jetbrains-mono
   ];
   #VIRT-MANAGER	
 
