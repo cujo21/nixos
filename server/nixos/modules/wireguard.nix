@@ -3,7 +3,7 @@
   networking.nat = {
     enable = true;
     enableIPv6 = true;
-    externalInterface = "enp4s0";
+    externalInterface = "enp1s0";
     internalInterfaces = [ "wg0" ];
   };
 
