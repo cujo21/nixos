@@ -17,7 +17,7 @@
 			mpv
 			looking-glass-client
 			ungoogled-chromium
-			#spotify
+			spotify
 			vscodium
 			logseq
 			git
@@ -49,6 +49,8 @@
 			wl-clipboard
 			timg
 			easyeffects
+			onlyoffice-bin
+
 		];
 	};
 	

@@ -6,5 +6,7 @@
     ./kitty.nix
     ./neovim.nix
     ./hyprland.nix
+    #./appearance.nix
+    ./waybar.nix
   ];
 }

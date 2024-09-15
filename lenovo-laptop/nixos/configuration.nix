@@ -41,32 +41,38 @@
 
   #FLAKES
   nix.settings.experimental-features = ["nix-command" "flakes"]; 
-
+  
+  #CACHIX
+  nix.settings = {
+    substituters = ["https://hyprland.cachix.org"];
+    trusted-public-keys = ["hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc="];
+  };
+  
   #networking.hostName = "nixos"; # Define your hostname.
   # Pick only one of the below networking options.
   #networking.wireless.enable = true;  # Enables` wireless support via wpa_supplicant.
   #networking.networkmanager.unmanaged = [ "wlan0" ];
-  # networking.networkmanager.enable = true;  # Easiest to use and most distros use this by default.
+  networking.networkmanager.enable = true;  # Easiest to use and most distros use this by default.
   #services.avahi.enable = true;
   #services.avahi.nssmdns4 = false;
   #services.avahi.nssmdns6 = false;
 
-	networking = {
-		networkmanager = {
-			enable = true;
-			wifi = {
-				powersave = false;
-			};
-			# insertNameservers = [ "1.1.1.1" ];
-		};
-		hostName = "nixos";
-		useDHCP = lib.mkDefault false;
-		interfaces.wlan0.useDHCP = lib.mkDefault true;
-		firewall.enable = false;
-	};
-	system.nssModules = lib.mkForce []; 
+# 	networking = {
+#		networkmanager = {
+#			enable = true;
+#			wifi = {
+#				powersave = false;
+#			};
+#			# insertNameservers = [ "1.1.1.1" ];
+#		};
+#		hostName = "nixos";
+#		useDHCP = lib.mkDefault false;
+#		interfaces.wlan0.useDHCP = lib.mkDefault true;
+#		firewall.enable = false;
+#	};
+#	system.nssModules = lib.mkForce []; 
 	
-	systemd.services.NetworkManager-wait-online.enable = false;
+#	systemd.services.NetworkManager-wait-online.enable = false;
 	
 	hardware.bluetooth = {
         	enable = true;
@@ -117,6 +123,7 @@
   #programs.kitty.enable = true;
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
   
+  programs.waybar.enable = true;
   programs.thunar.enable = true;
   programs.xfconf.enable = true;
   programs.thunar.plugins = with pkgs.xfce; [
@@ -168,10 +175,22 @@
   #   wget
      kdePackages.filelight
      iwd
-     xdg-desktop-portal
-     xdg-desktop-portal-gnome
+     xdg-desktop-portal-gtk
+     xdg-desktop-portal-hyprland
   ];
-  
+
+  nixpkgs.config.allowUnfree = true;
+
+  xdg.portal = {
+    xdgOpenUsePortal = true;
+    enable = true;
+    # wlr.enable = true;
+    # lxqt.enable = true;
+    extraPortals = [
+      pkgs.xdg-desktop-portal-gtk
+      pkgs.xdg-desktop-portal-hyprland
+    ];
+  };
   #VIRT-MANAGER	
 
   #virtualisation.libvirtd.enable = true;
