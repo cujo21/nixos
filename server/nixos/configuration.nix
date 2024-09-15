@@ -98,7 +98,7 @@ in
 #		'';
 #		
 #    	};
-  services.vsftp = {
+  services.vsftpd = {
     enabe = true;
     writeEnable = true;
     localUsers = true;
