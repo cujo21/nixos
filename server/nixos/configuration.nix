@@ -98,6 +98,13 @@ in
 #		'';
 #		
 #    	};
+  services.vsftp = {
+    enabe = true;
+    writeEnable = true;
+    localUsers = true;
+    userlist = [ "cujo" ];
+    userlistEnable = true;
+  };
 		  
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
