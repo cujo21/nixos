@@ -99,7 +99,7 @@ in
 #		
 #    	};
   services.vsftpd = {
-    enabe = true;
+    enable = true;
     writeEnable = true;
     localUsers = true;
     userlist = [ "cujo" ];
