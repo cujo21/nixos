@@ -7,8 +7,6 @@
     plugins = with pkgs.vimPlugins; [ 
       vim-devicons
       lightline-vim
-      markdown-nvim
-      markdown-preview-nvim
       nvim-treesitter.withAllGrammars
       nvim-treesitter-textobjects
       nvim-treesitter-endwise

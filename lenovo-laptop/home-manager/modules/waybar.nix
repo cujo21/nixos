@@ -6,7 +6,7 @@
     style = ''
       * {
 	border: none;
-	border-radius: 10;
+	border-radius: 10px;
 	font-family: "JetbrainsMono Nerd Font";
 	font-size: 15px;
 	min-height: 10px;
@@ -228,8 +228,8 @@
 	  };
 	};
 
-	"river/taags" = {
-	  "num-tags"= 6;
+	"river/tags" = {
+	  "num-tags"= 10;
 	};
 
 	"network" = {

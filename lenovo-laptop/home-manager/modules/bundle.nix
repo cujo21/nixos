@@ -7,6 +7,6 @@
     ./neovim.nix
     ./hyprland.nix
     #./appearance.nix
-    ./waybar.nix
+    #./waybar.nix
   ];
 }

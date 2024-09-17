@@ -11,13 +11,12 @@
       ./modules/bundle.nix
     ];
 
-
   # Use the systemd-boot EFI boot loader.
   # boot.loader.systemd-boot.enable = true;
   # boot.loader.efi.canTouchEfiVariables = true;
 
   #GRUB 
-  boot.kernelPackages = pkgs.linuxPackages_latest;
+  #boot.kernelPackages = pkgs.linuxPackages_latest;
   boot.loader = {
     efi = {
       canTouchEfiVariables = true;
@@ -85,7 +84,6 @@
                 };
         };
 	
-	services.gollum.math.enable = true;
 
 
   # Set your time zone.
@@ -123,7 +121,7 @@
   #programs.kitty.enable = true;
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
   
-  programs.waybar.enable = true;
+  #programs.waybar.enable = true;
   programs.thunar.enable = true;
   programs.xfconf.enable = true;
   programs.thunar.plugins = with pkgs.xfce; [

@@ -26,14 +26,13 @@
 			nix-bash-completions
 			qbittorrent
 			android-tools
-			finamp
 			#freecad
 			speedtest-cli
 			rpi-imager
 			wget
 			busybox
 			rar
-			#flameshot
+			flameshot
 			#libreoffice
 			#filezilla
 			ffmpeg
@@ -51,6 +50,7 @@
 			easyeffects
 			onlyoffice-bin
 			discord
+			#deluge
 		];
 	};
 	
@@ -65,7 +65,7 @@
 	    allowUnfreePredicate = (_: true);
 	  };
 	};
-	
+
 	#services.flatpak = {
 	#	enable = true;
 	#	packages = [
@@ -76,5 +76,7 @@
 	#		"org.onlyoffice.desktopeditors"
 	# 		];
 	#};
-	
+	nixpkgs.config.permittedInsecurePackages = [
+                "electron-27.3.11"
+        ];
 }
