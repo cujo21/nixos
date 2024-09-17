@@ -32,12 +32,12 @@ in
 	networking = {
 		networkmanager = {
 			enable = true;
-			insertNameservers = [ "192.168.0.1" ];
+			#insertNameservers = [ "192.168.0.1" ];
 		};
 		hostName = "nixos-server";
-		useDHCP = false;
+		#useDHCP = false;
 		
-		interfaces.enp1s0.useDHCP = true;
+		#interfaces.enp1s0.useDHCP = true;
 		firewall.enable = false;
 	};
 	
