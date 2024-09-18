@@ -203,6 +203,8 @@
     font-awesome
     nerdfonts
     jetbrains-mono
+    corefonts
+    vistafonts
   ];
   #VIRT-MANAGER	
 

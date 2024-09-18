@@ -11,7 +11,7 @@
 			size = 11;
 		};
 		extraConfig = "
-			include /home/cujo/nix/lenovo-laptop/home-manager/modules/kitty_gruvbox_dark.conf
+			include /home/cujo/nix/lenovo-laptop/home-manager/modules/rose-pine.conf
 			# Window layout
 
 			remember_window_size  no

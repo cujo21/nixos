@@ -33,7 +33,7 @@
 			busybox
 			rar
 			flameshot
-			#libreoffice
+			libreoffice
 			#filezilla
 			ffmpeg
 			parted

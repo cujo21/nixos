@@ -15,9 +15,13 @@
 	plugin = nerdtree;
 	config = "let g:NERDTreeWinSize=50";
       }
+#      {
+#	plugin = gruvbox-nvim;
+#	config = "colorscheme gruvbox";
+#      }
       {
-	plugin = gruvbox-nvim;
-	config = "colorscheme gruvbox";
+	plugin = rose-pine;
+	config = "colorscheme rose-pine";
       }
 
     ];
