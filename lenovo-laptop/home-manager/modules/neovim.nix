@@ -14,18 +14,14 @@
 	plugin = nerdtree;
 	config = "let g:NERDTreeWinSize=50";
       }
-#      {
-#	plugin = gruvbox-nvim;
-#	config = "colorscheme gruvbox";
-#      }
-      
+     
       {
 	plugin = lightline-vim;
       }
 
       {
 	plugin = rose-pine;
-	config = "colorscheme rose-pine-moon";
+	config = "colorscheme rose-pine";
       }
 
     ];
@@ -43,6 +39,9 @@
       set clipboard+=unnamedplus
       set encoding=UTF-8
       let mapleader = " "
+      let g:lightline = {
+	\ 'colorscheme': 'rosepine',
+	\ }
 
       nnoremap <C-n> :NERDTree
       nnoremap <C-t> :NERDTreeToggle
