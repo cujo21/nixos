@@ -6,7 +6,6 @@
 
     plugins = with pkgs.vimPlugins; [ 
       vim-devicons
-      lightline-vim
       nvim-treesitter.withAllGrammars
       nvim-treesitter-textobjects
       nvim-treesitter-endwise
@@ -19,9 +18,14 @@
 #	plugin = gruvbox-nvim;
 #	config = "colorscheme gruvbox";
 #      }
+      
+      {
+	plugin = lightline-vim;
+      }
+
       {
 	plugin = rose-pine;
-	config = "colorscheme rose-pine";
+	config = "colorscheme rose-pine-moon";
       }
 
     ];
