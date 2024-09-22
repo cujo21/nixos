@@ -42,10 +42,10 @@
   nix.settings.experimental-features = ["nix-command" "flakes"]; 
   
   #CACHIX
-  nix.settings = {
-    substituters = ["https://hyprland.cachix.org"];
-    trusted-public-keys = ["hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc="];
-  };
+  #nix.settings = {
+  #  substituters = ["https://hyprland.cachix.org"];
+  #  trusted-public-keys = ["hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc="];
+  #};
   
   #networking.hostName = "nixos"; # Define your hostname.
   # Pick only one of the below networking options.
@@ -117,7 +117,7 @@
 
   services.xserver.enable = true;
   services.displayManager.sddm.enable = true;
-  programs.hyprland.enable = true;
+  #programs.hyprland.enable = true;
   #programs.kitty.enable = true;
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
   

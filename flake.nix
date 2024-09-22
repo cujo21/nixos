@@ -2,7 +2,7 @@
 
         description = "System Configuration";
         inputs = {
-                nixpkgs.url = "github:nixos/nixpkgs/master";
+                nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
                 home-manager = {
                         url = "github:nix-community/home-manager";
@@ -10,10 +10,10 @@
                 };
 	
                 nix-flatpak.url = "github:gmodena/nix-flatpak";
-		hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
+		#hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
         };
 
-        outputs = { self, nixpkgs, home-manager, nix-flatpak, hyprland, ... } @inputs :
+        outputs = { self, nixpkgs, home-manager, nix-flatpak, ... } @inputs :
                 let 
                         system = "x86_64-linux";
                 in {
@@ -36,12 +36,12 @@
                         pkgs = nixpkgs.legacyPackages.${system};
                         modules = [
                           nix-flatpak.homeManagerModules.nix-flatpak
-			  {
-			    wayland.windowManager.hyprland = {
-			      enable = true;
-			      package = inputs.hyprland.packages.${system}.hyprland;
-			    };
-			  }
+			  #{
+			  #  wayland.windowManager.hyprland = {
+			  #    enable = true;
+			  #    package = inputs.hyprland.packages.${system}.hyprland;
+			  #  };
+			  #}
                           ./lenovo-laptop/home-manager/home.nix
 			  ];
                         };		
