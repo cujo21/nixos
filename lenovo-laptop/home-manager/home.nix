@@ -16,7 +16,7 @@
 			pciutils
 			mpv
 			looking-glass-client
-			ungoogled-chromium
+			#ungoogled-chromium
 			spotify
 			vscodium
 			logseq
@@ -43,7 +43,7 @@
 			#qownnotes
 			thunderbird
 			payload-dumper-go
-			telegram-desktop
+			#telegram-desktop
 			wireguard-tools
 			wl-clipboard
 			timg
