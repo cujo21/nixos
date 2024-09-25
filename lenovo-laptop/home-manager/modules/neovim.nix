@@ -18,11 +18,11 @@
       {
 	plugin = lightline-vim;
       }
-
       {
-	plugin = rose-pine;
-	config = "colorscheme rose-pine";
+	plugin = base16-nvim;
+	config = "colorscheme base16-gruvbox-dark-medium";
       }
+
     ];
 
     extraConfig = ''
@@ -39,7 +39,7 @@
       set encoding=UTF-8
       let mapleader = " "
       let g:lightline = {
-	\ 'colorscheme': 'rosepine',
+	\ 'colorscheme': 'jellybeans',
 	\ }
 
       nnoremap <C-n> :NERDTree

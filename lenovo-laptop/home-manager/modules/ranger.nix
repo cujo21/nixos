@@ -5,6 +5,9 @@
     extraConfig = "
       default_linemode devicons2
     ";
+    settings = {
+      preview_images_method = "kitty";
+    };
     plugins = [
       {
 	name = "devicons2";
