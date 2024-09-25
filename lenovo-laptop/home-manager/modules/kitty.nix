@@ -8,7 +8,7 @@
 
 		font = {
 			name = "JetBrainsMono NF";
-			size = 12;
+			size = 11;
 		};
 		extraConfig = "
 			include /home/cujo/nix/lenovo-laptop/home-manager/modules/rose-pine.conf
