@@ -40,7 +40,7 @@
 			#element-desktop
 			brave
 			#obsidian
-			#qownnotes
+			qownnotes
 			thunderbird
 			payload-dumper-go
 			#telegram-desktop
@@ -51,6 +51,12 @@
 			onlyoffice-bin
 			discord
 			#deluge
+			glow
+			ghostwriter
+			strawberry
+			streamrip
+			lollypop
+			ranger
 		];
 	};
 	

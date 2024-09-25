@@ -10,7 +10,7 @@
 			devices = {
 				server = {
 					addresses = [
-						"tcp://192.168.0.104:22000"
+						"tcp://192.168.0.100:22000"
 					];
 					id = "3DPX6WI-GVOXCTD-XDB47WD-5KWBOEH-3LTKYKR-C35N6CF-EA3MSZL-OOBHZQD";
 				};
@@ -35,7 +35,12 @@
 				"/home/cujo/notes-md" = {
 				  label = "notes-md";
 				  id = "notes-md";
-				  devices = [ "server" ];
+				  devices = [ "server" "op11" ];
+				};
+				"/home/cujo/mount/Music" = {
+				  label = "music";
+				  id = "music";
+				  devices = [ "op11" ];
 				};
 			};
 		};

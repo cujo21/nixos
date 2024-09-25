@@ -8,16 +8,16 @@
 
 		font = {
 			name = "JetBrainsMono NF";
-			size = 11;
+			size = 12;
 		};
 		extraConfig = "
 			include /home/cujo/nix/lenovo-laptop/home-manager/modules/rose-pine.conf
 			# Window layout
 
 			remember_window_size  no
-			initial_window_width  1280
-			initial_window_height 720
-			hide_window_decorations yes
+			initial_window_width  1440
+			initial_window_height 900
+			hide_window_decorations no
 
 			# Tab bar
 

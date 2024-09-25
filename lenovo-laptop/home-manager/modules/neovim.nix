@@ -10,6 +10,7 @@
       nvim-treesitter-textobjects
       nvim-treesitter-endwise
       oil-nvim
+      ranger-nvim
       {
 	plugin = nerdtree;
 	config = "let g:NERDTreeWinSize=50";
