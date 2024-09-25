@@ -15,6 +15,9 @@
 		};
 		initExtra = "
 		";
+		bashrcExtra = "
+		  export EDITOR='vim'
+		";
         };
 
 }

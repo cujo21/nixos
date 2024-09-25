@@ -55,7 +55,6 @@
 			strawberry
 			streamrip
 			lollypop
-			ranger
 		];
 	};
 	
