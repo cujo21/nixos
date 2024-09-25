@@ -14,7 +14,6 @@
 			#neovim
 			tree
 			pciutils
-			mpv
 			looking-glass-client
 			#ungoogled-chromium
 			spotify

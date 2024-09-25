@@ -10,7 +10,6 @@
       nvim-treesitter-textobjects
       nvim-treesitter-endwise
       oil-nvim
-      ranger-nvim
       {
 	plugin = nerdtree;
 	config = "let g:NERDTreeWinSize=50";
@@ -24,7 +23,6 @@
 	plugin = rose-pine;
 	config = "colorscheme rose-pine";
       }
-
     ];
 
     extraConfig = ''
@@ -62,5 +60,5 @@
       autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | call feedkeys(":quit\<CR>:\<BS>") | endif
 
       '';
-    };
+  };
 }

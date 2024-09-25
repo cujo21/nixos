@@ -5,6 +5,9 @@
     ./jellyfin-mpv-shim.nix
     ./kitty.nix
     ./neovim.nix
+    ./mpv.nix
+
+
     #./hyprland.nix
     #./appearance.nix
     #./waybar.nix
