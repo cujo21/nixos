@@ -124,6 +124,7 @@ in
     brightnessctl
     zip
     git
+    unzip
     cujopush 
     speedtest-cli
   ];
