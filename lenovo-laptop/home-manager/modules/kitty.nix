@@ -7,7 +7,7 @@
 		};
 
 		font = {
-			name = "JetBrainsMono NF";
+			name = "Hack Nerd Font";
 			size = 11;
 		};
 		extraConfig = "

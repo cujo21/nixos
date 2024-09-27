@@ -56,6 +56,7 @@
 			streamrip
 			lollypop
 			tdf
+			lsd
 		];
 	};
 	

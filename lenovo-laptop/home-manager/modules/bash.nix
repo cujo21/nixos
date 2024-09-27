@@ -13,11 +13,13 @@
 			r = "ranger";
 			lookgc = "looking-glass-client -m 97";
 			wifi_connect = "sudo wpa_supplicant -c /home/cujo/wpa_supplicant.conf -i wlp4s0";
+			ls = "lsd";
 		};
 		initExtra = "
 		";
 		bashrcExtra = "
 		  export EDITOR='vim'
+		  export TERM='xterm-256color'
 		";
         };
 
