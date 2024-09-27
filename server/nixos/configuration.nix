@@ -63,41 +63,6 @@ in
 		};
 	};
 	
-	services.caddy = {
-		enable = true;
-		virtualHosts."95661601.xyz".extraConfig = ''
-			redir /radarr /radarr/
-		   	redir /jellyfin /jellyfin/
-			redir /sonarr /sonarr/
-			redir /prowlarr /prowlarr/
-			
-			reverse_proxy /radarr/* {
-				to 192.168.0.100:7878
-			}
-			
-			reverse_proxy /jellyfin/* {
-				to 192.168.0.100:8096
-			}
-			
-			reverse_proxy /sonarr/* {
-				to 192.168.0.100:8989
-			}
-
-			reverse_proxy /prowlarr/* {
-				to 192.168.0.100:9696
-			}
-			
-			reverse_proxy {
-				to 192.168.0.100:8080
-			}
-		'';
-		virtualHosts."docker.95661601.xyz".extraConfig = ''
-			reverse_proxy {
-				to 192.168.0.100:9000
-			} 
-		'';
-		
-   	};
   services.vsftpd = {
     enable = true;
     writeEnable = true;
