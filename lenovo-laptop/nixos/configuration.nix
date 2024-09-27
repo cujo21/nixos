@@ -111,15 +111,15 @@
   # KDE INSTALLATION
   #services.xserver.enable = true;
   #services.displayManager.sddm.enable = true;
-  services.desktopManager.plasma6.enable = true;
+  #services.desktopManager.plasma6.enable = true;
 
   #Hyprland 
 
-  services.xserver.enable = true;
-  services.displayManager.sddm.enable = true;
+  #services.xserver.enable = true;
+  #services.displayManager.sddm.enable = true;
   #programs.hyprland.enable = true;
   #programs.kitty.enable = true;
-  environment.sessionVariables.NIXOS_OZONE_WL = "1";
+  #environment.sessionVariables.NIXOS_OZONE_WL = "1";
   
   #programs.waybar.enable = true;
 
@@ -162,24 +162,11 @@
      home-manager
      inter
   #   wget
-     kdePackages.filelight
+     kitty
      iwd
-     xdg-desktop-portal-gtk
-     xdg-desktop-portal-hyprland
   ];
 
   nixpkgs.config.allowUnfree = true;
-
-  xdg.portal = {
-    xdgOpenUsePortal = true;
-    enable = true;
-    # wlr.enable = true;
-    # lxqt.enable = true;
-    extraPortals = [
-      pkgs.xdg-desktop-portal-gtk
-      pkgs.xdg-desktop-portal-hyprland
-    ];
-  };
 
   fonts.packages = with pkgs; [
     noto-fonts

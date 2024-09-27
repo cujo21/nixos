@@ -57,6 +57,7 @@
 			lollypop
 			tdf
 			lsd
+			ocs-url
 		];
 	};
 	

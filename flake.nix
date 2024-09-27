@@ -11,9 +11,15 @@
 	
                 nix-flatpak.url = "github:gmodena/nix-flatpak";
 		#hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
+
+	  plasma-manager = {
+	    url = "github:nix-community/plasma-manager";
+	    inputs.nixpkgs.follows = "nixpkgs";
+	    inputs.home-manager.follows = "home-manager";
+	  };
         };
 
-        outputs = { self, nixpkgs, home-manager, nix-flatpak, ... } @inputs :
+        outputs = { self, nixpkgs, home-manager, nix-flatpak, plasma-manager, ... } @inputs :
                 let 
                         system = "x86_64-linux";
                 in {
@@ -35,6 +41,7 @@
                 homeConfigurations.cujo = home-manager.lib.homeManagerConfiguration {
                         pkgs = nixpkgs.legacyPackages.${system};
                         modules = [
+			  inputs.plasma-manager.homeManagerModules.plasma-manager
                           nix-flatpak.homeManagerModules.nix-flatpak
 			  #{
 			  #  wayland.windowManager.hyprland = {

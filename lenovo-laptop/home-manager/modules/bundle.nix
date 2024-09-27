@@ -7,6 +7,7 @@
     ./neovim.nix
     ./mpv.nix
     ./ranger.nix
+    ./plasma-manager.nix
 
     #./hyprland.nix
     #./appearance.nix
