@@ -12,7 +12,7 @@
       oil-nvim
       {
 	plugin = nerdtree;
-	config = "let g:NERDTreeWinSize=50";
+	config = "let g:NERDTreeWinSize=30";
       }
      
       {

@@ -55,6 +55,7 @@
 			strawberry
 			streamrip
 			lollypop
+			tdf
 		];
 	};
 	
