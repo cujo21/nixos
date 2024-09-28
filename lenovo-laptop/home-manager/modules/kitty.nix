@@ -7,11 +7,11 @@
 		};
 
 		font = {
-			name = "Hack Nerd Font";
-			size = 11;
+			name = "Inconsolata";
+			size = 12;
 		};
 		extraConfig = "
-			include /home/cujo/nix/lenovo-laptop/home-manager/modules/kitty_gruvbox_dark.conf
+			include /home/cujo/nix/lenovo-laptop/home-manager/modules/kitty-ayu.conf
 			# Window layout
 
 			remember_window_size  no

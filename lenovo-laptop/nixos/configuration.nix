@@ -183,6 +183,7 @@
     jetbrains-mono
     corefonts
     vistafonts
+    inconsolata
   ];
   #VIRT-MANAGER	
 

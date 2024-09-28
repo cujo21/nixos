@@ -19,8 +19,8 @@
 	plugin = lightline-vim;
       }
       {
-	plugin = base16-nvim;
-	config = "colorscheme base16-gruvbox-dark-medium";
+	plugin = neovim-ayu;
+	config = "colorscheme ayu-dark";
       }
 
     ];
@@ -39,7 +39,7 @@
       set encoding=UTF-8
       let mapleader = " "
       let g:lightline = {
-	\ 'colorscheme': 'jellybeans',
+	\ 'colorscheme': 'ayu_dark',
 	\ }
 
       nnoremap <C-n> :NERDTree
