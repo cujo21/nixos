@@ -10,6 +10,9 @@
     konsole
     oxygen
     elisa
+    kwalletmanager
+    kate
+    spectacle
   ];
 
   programs.dconf.enable = true;
