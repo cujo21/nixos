@@ -11,7 +11,7 @@
 			size = 11;
 		};
 		extraConfig = "
-			include /home/cujo/nix/lenovo-laptop/home-manager/modules/kitty-themes/base16-tomorrow-night-eighties.conf
+			include /home/cujo/nix/lenovo-laptop/home-manager/modules/kitty-themes/base16-tomorrow-night-256.conf
 			# Window layout
 
 			remember_window_size  no
