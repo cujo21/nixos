@@ -47,6 +47,7 @@
 			lollypop
 			lsd
 			ocs-url
+			mimeo
 		];
 	};
 	
