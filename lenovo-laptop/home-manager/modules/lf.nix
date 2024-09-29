@@ -13,6 +13,11 @@
       hidden = true;
       preview = true;
       relativenumber = true;
+      ratios = [
+	1
+	2
+	2
+      ];
     };
 
     commands = {
