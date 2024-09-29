@@ -8,6 +8,7 @@
     ./mpv.nix
     ./ranger.nix
     ./plasma-manager.nix
+    ./lf.nix
 
     #./hyprland.nix
     #./appearance.nix
