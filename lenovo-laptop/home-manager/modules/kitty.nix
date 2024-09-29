@@ -7,11 +7,11 @@
 		};
 
 		font = {
-			name = "Inconsolata";
-			size = 12;
+			name = "Hack";
+			size = 11;
 		};
 		extraConfig = "
-			include /home/cujo/nix/lenovo-laptop/home-manager/modules/kitty-ayu.conf
+			include /home/cujo/nix/lenovo-laptop/home-manager/modules/kitty-themes/base16-tomorrow-night-eighties.conf
 			# Window layout
 
 			remember_window_size  no

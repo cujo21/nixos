@@ -9,6 +9,7 @@
       nvim-treesitter.withAllGrammars
       nvim-treesitter-textobjects
       nvim-treesitter-endwise
+      render-markdown-nvim
       oil-nvim
       {
 	plugin = nerdtree;
@@ -19,8 +20,8 @@
 	plugin = lightline-vim;
       }
       {
-	plugin = neovim-ayu;
-	config = "colorscheme ayu-dark";
+	plugin = base16-vim;
+	config = "colorscheme base16-tomorrow-night-eighties";
       }
 
     ];
@@ -39,7 +40,7 @@
       set encoding=UTF-8
       let mapleader = " "
       let g:lightline = {
-	\ 'colorscheme': 'ayu_dark',
+	\ 'colorscheme': 'Tomorrow_Night_Eighties',
 	\ }
 
       nnoremap <C-n> :NERDTree
