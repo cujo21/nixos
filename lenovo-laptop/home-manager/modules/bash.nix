@@ -19,6 +19,7 @@
 		  export EDITOR='vim'
 		  export TERM='xterm-256color'
 		  export OPENER='mimeo'
+		  export NIXPKGS_ALLOW_UNFREE=1
 		";
         };
 
