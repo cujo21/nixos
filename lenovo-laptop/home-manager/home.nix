@@ -8,14 +8,11 @@
 			htop
 			firefox
 			keepassxc
-			#syncthing
 			unzip 
 			zip
-			#neovim
 			tree
 			pciutils
 			looking-glass-client
-			#ungoogled-chromium
 			spotify
 			vscodium
 			logseq
@@ -25,7 +22,6 @@
 			nix-bash-completions
 			qbittorrent
 			android-tools
-			#freecad
 			speedtest-cli
 			rpi-imager
 			wget
@@ -33,29 +29,22 @@
 			rar
 			flameshot
 			libreoffice
-			#filezilla
 			ffmpeg
 			parted
-			#element-desktop
-			brave
-			#obsidian
 			qownnotes
 			thunderbird
 			payload-dumper-go
-			#telegram-desktop
 			wireguard-tools
 			wl-clipboard
 			timg
 			easyeffects
 			onlyoffice-bin
 			discord
-			#deluge
 			glow
 			ghostwriter
 			strawberry
 			streamrip
 			lollypop
-			tdf
 			lsd
 			ocs-url
 		];
