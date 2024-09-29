@@ -12,6 +12,7 @@
       ignorecase = true;
       hidden = true;
       preview = true;
+      relativenumber = true;
     };
 
     commands = {
