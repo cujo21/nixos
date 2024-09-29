@@ -10,7 +10,6 @@
       icons = true;
       drawbox = true;
       ignorecase = true;
-      hidden = true;
       preview = true;
       relativenumber = true;
       ratios = [
