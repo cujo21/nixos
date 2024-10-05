@@ -19,7 +19,6 @@
 			git
 			noto-fonts-cjk-sans
 			speedtest-cli
-			nix-bash-completions
 			qbittorrent
 			android-tools
 			speedtest-cli
