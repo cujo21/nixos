@@ -13,6 +13,7 @@
     ";
     settings = {
       preview_images_method = "kitty";
+      line_numbers = "relative";
     };
     plugins = [
       {

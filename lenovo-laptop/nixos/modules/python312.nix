@@ -1,7 +1,7 @@
 { pkgs, ... }: {
 
-  environment.systemPackages = [
-    pkgs.python312Full
+  environment.systemPackages = with pkgs; [
+    python312Full
     virtualenv
   ];
 

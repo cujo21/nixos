@@ -6,7 +6,12 @@
 		dataDir = "/home/cujo";
 		systemService = true;
 
+
 		settings = {
+
+		  options = {
+		    relaysEnabled = false;
+		  };
 			devices = {
 				server = {
 					addresses = [

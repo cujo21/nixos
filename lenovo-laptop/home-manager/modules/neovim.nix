@@ -5,12 +5,8 @@
     vimAlias = true;
 
     plugins = with pkgs.vimPlugins; [ 
-      vim-devicons
-      nvim-treesitter.withAllGrammars
-      nvim-treesitter-textobjects
-      nvim-treesitter-endwise
-      render-markdown-nvim
-      oil-nvim
+      vim-devicons 
+      markdown-preview-nvim
       {
 	plugin = nerdtree;
 	config = "let g:NERDTreeWinSize=30";
@@ -84,6 +80,7 @@
       set clipboard+=unnamedplus
       set encoding=UTF-8
       let mapleader = " "
+
       
 
       nnoremap <C-n> :NERDTree
