@@ -32,11 +32,6 @@
 					id = "Logseq";
 					devices = [ "server" "op11" ];
 				};
-				"/home/cujo/notes-md" = {
-				  label = "notes-md";
-				  id = "notes-md";
-				  devices = [ "server" "op11" ];
-				};
 				"/home/cujo/mount/Music" = {
 				  label = "music";
 				  id = "music";
