@@ -164,6 +164,9 @@
   #   wget
      kitty
      iwd
+     gst_all_1.gstreamer
+     gst_all_1.gst-plugins-rs
+
   ];
 
   nixpkgs.config.allowUnfree = true;

@@ -19,6 +19,9 @@
 		  export EDITOR='vim'
 		  export TERM='xterm-256color'
 		  export NIXPKGS_ALLOW_UNFREE=1
+		  export GST_PLUGIN_SYSTEM_PATH_1_0=/run/current-system/sw/lib/gstreamer-1.0/
+		  export GST_PLUGIN_SYSTEM_PATH=/run/current-system/sw/lib/gstreamer-1.0/
+
 		";
         };
 
