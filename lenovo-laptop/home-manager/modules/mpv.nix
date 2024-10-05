@@ -15,8 +15,6 @@
 	audio-display = "no";
       };
     };
-
-    scripts = [ pkgs.mpvScripts.mpv-osc-modern ];
   };
 
 }

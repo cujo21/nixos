@@ -188,6 +188,9 @@
     vistafonts
     inconsolata
   ];
+
+  #ZSH
+  programs.zsh.enable = true;
   #VIRT-MANAGER	
 
   #virtualisation.libvirtd.enable = true;

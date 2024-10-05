@@ -1,6 +1,6 @@
 {
   imports = [
-    ./bash.nix
+    #./bash.nix
     ./virt-manager.nix
     ./jellyfin-mpv-shim.nix
     ./kitty.nix
@@ -9,6 +9,7 @@
     ./ranger.nix
     ./plasma-manager.nix
     ./lf.nix
+    ./zsh.nix
 
     #./hyprland.nix
     #./appearance.nix
