@@ -19,6 +19,16 @@
 	ls = "lsd";
     };
 
+    prezto = {
+      enable = true;
+      prompt = {
+	theme = "paradox";
+      };
+      terminal = {
+	autoTitle = true;
+      };
+    };
+
     envExtra = ''
       export EDITOR='vim'
       export TERM='xterm-256color'
