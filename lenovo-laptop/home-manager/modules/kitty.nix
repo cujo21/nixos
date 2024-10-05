@@ -12,6 +12,7 @@
 		};
 		extraConfig = "
 			include /home/cujo/nix/lenovo-laptop/home-manager/modules/kitty-themes/base16-tomorrow-night-256.conf
+			shell zsh
 			# Window layout
 
 			remember_window_size  no
