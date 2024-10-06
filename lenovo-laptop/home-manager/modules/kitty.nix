@@ -7,18 +7,20 @@
 		};
 
 		font = {
-			name = "Hack";
-			size = 11;
+			name = "JetBrainsMono Nerd Font";
+			size = 12;
 		};
 		extraConfig = "
-			include /home/cujo/nix/lenovo-laptop/home-manager/modules/kitty-themes/base16-tomorrow-night-256.conf
+			include /home/cujo/nix/lenovo-laptop/home-manager/modules/kitty-themes/catppuccin_mocha.conf
 			shell zsh
+			background_opacity 0.8
+
 			# Window layout
 
 			remember_window_size  no
-			initial_window_width  1440
-			initial_window_height 900
-			hide_window_decorations no
+			initial_window_width  1920
+			initial_window_height 1080
+			hide_window_decorations yes
 
 			# Tab bar
 

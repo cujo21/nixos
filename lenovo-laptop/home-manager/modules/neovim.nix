@@ -9,9 +9,8 @@
       markdown-preview-nvim
       {
 	plugin = nerdtree;
-	config = "let g:NERDTreeWinSize=30";
+	config = "let g:NERDTreeWinSize=40";
       }
-     
       {
 	plugin = lualine-nvim;
 	type = "lua";
@@ -20,7 +19,7 @@
 	      {
 		options = {
 		  icons_enabled = true,
-		  theme = 'base16',
+		  theme = 'catppuccin',
 		  component_separators = { left = '', right = ''},
 		  section_separators = { left = '', right = ''},
 		  disabled_filetypes = {
@@ -29,7 +28,7 @@
 		  },
 		  ignore_focus = {},
 		  always_divide_middle = true,
-		  globalstatus = false,
+		  globalstatus = true,
 		  refresh = {
 		    statusline = 1000,
 		    tabline = 1000,
@@ -61,8 +60,23 @@
 	'';
       }
       {
-	plugin = base16-vim;
-	config = "colorscheme base16-tomorrow-night";
+	plugin = catppuccin-nvim;
+	type = "lua";
+	config = ''
+	  require("catppuccin").setup(
+	    {
+	      transparent_background = false,
+	      flavour = "auto",
+	      background = {
+		light = "latte",
+		dark = "mocha",
+	      },
+	      default_integrations = true,
+	      integrations = {
+		nvimtree = true,
+	      },
+	    })
+	'';
       }
 
     ];
@@ -80,6 +94,7 @@
       set clipboard+=unnamedplus
       set encoding=UTF-8
       let mapleader = " "
+      colorscheme catppuccin-mocha
 
       
 
