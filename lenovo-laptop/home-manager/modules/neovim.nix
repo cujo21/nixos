@@ -9,7 +9,10 @@
       markdown-preview-nvim
       {
 	plugin = nerdtree;
-	config = "let g:NERDTreeWinSize=40";
+	config = ''
+	  let g:NERDTreeWinSize=40
+	  let g:NERDTreeShowLineNumbers=1
+	'';
       }
       {
 	plugin = lualine-nvim;
@@ -22,10 +25,7 @@
 		  theme = 'catppuccin',
 		  component_separators = { left = '', right = ''},
 		  section_separators = { left = '', right = ''},
-		  disabled_filetypes = {
-		    statusline = {},
-		    winbar = {},
-		  },
+		  disabled_filetypes = {},
 		  ignore_focus = {},
 		  always_divide_middle = true,
 		  globalstatus = true,
