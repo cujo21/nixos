@@ -22,7 +22,7 @@
     prezto = {
       enable = true;
       prompt = {
-	theme = "paradox";
+	theme = "kylewest";
       };
       terminal = {
 	autoTitle = true;
