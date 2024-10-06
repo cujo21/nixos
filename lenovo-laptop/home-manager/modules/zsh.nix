@@ -1,4 +1,6 @@
 {
+  
+  home.file."p10k.zsh".text = builtins.readFile ./p10k.zsh;
 
   programs.zsh = {
     enable = true;
@@ -22,7 +24,7 @@
     prezto = {
       enable = true;
       prompt = {
-	theme = "kylewest";
+	theme = "powerlevel10k";
       };
       terminal = {
 	autoTitle = true;
