@@ -29,10 +29,6 @@
       };
     };
 
-    profileExtra = ''
-       setopt rmstarsilent
-    '';
-
     envExtra = ''
       export EDITOR='vim'
       export TERM='xterm-256color'
