@@ -1,10 +1,16 @@
 { pkgs, ... }: {
 
+  home = {
+    packages = with pkgs; [
+      catppuccin-kde
+    ];
+  };
+
   programs.plasma = {
     enable = true;
 
     workspace = {
-      lookAndFeel = "org.kde.breezedark.desktop";
+      colorScheme = "CatppuccinFrappeBlue"; # plasma-apply-colorscheme --list-schemes
     };
 
     hotkeys.commands = {
