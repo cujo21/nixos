@@ -24,7 +24,7 @@
     prezto = {
       enable = true;
       prompt = {
-	theme = "powerlevel10k";
+	theme = "kylewest";
       };
       terminal = {
 	autoTitle = true;
