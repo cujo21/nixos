@@ -5,7 +5,6 @@
 		./vm.nix
 		./kde.nix
 		./python312.nix
-		./zsh.nix
 	];
 
 }

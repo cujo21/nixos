@@ -40,7 +40,7 @@
 				"/home/cujo/mount/Music" = {
 				  label = "music";
 				  id = "music";
-				  devices = [ "op11" ];
+				  devices = [ "op11" "server" ];
 				};
 			};
 		};
