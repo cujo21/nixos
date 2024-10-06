@@ -1,6 +1,4 @@
 {
-  
-  home.file."p10k.zsh".text = builtins.readFile ./p10k.zsh;
 
   programs.zsh = {
     enable = true;
@@ -31,6 +29,10 @@
       };
     };
 
+    profileExtra = ''
+       setopt rmstarsilent
+    '';
+
     envExtra = ''
       export EDITOR='vim'
       export TERM='xterm-256color'
@@ -40,6 +42,8 @@
       
       export VISUAL='vim'
       export PAGER=more
+
+      setopt rmstarsilent 
     '';
   };
 
