@@ -17,9 +17,11 @@
 	    inputs.nixpkgs.follows = "nixpkgs";
 	    inputs.home-manager.follows = "home-manager";
 	  };
+
+	  stylix.url = "github:danth/stylix";
         };
 
-        outputs = { self, nixpkgs, home-manager, nix-flatpak, plasma-manager, ... } @inputs :
+        outputs = { self, nixpkgs, home-manager, nix-flatpak, plasma-manager, stylix, ... } @inputs :
                 let 
                         system = "x86_64-linux";
                 in {
@@ -49,9 +51,10 @@
 			  #    package = inputs.hyprland.packages.${system}.hyprland;
 			  #  };
 			  #}
+			  stylix.homeManagerModules.stylix
                           ./lenovo-laptop/home-manager/home.nix
-			  ];
-                        };		
+			];
+		};		
         };
 
 }
