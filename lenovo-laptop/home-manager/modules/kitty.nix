@@ -9,7 +9,7 @@
 		extraConfig = "
 			#include /home/cujo/nix/lenovo-laptop/home-manager/modules/kitty-themes/catppuccin_mocha.conf
 			shell zsh
-			background_opacity 0.65
+			background_opacity 0.8
 
 			# Window layout
 
