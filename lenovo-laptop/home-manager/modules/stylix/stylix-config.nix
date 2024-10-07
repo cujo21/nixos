@@ -7,6 +7,14 @@
     base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
 
     fonts = {
+      serif = {
+	package = pkgs.roboto;
+	name = "Roboto";
+      };
+      sansSerif = {
+	package = pkgs.roboto;
+	name = "Roboto";
+      };
       monospace = {
 	package = pkgs.jetbrains-mono;
 	name = "JetBrainsMono Nerd Font";
@@ -18,10 +26,7 @@
 	terminal = 12;
       };
     };
-    cursor = {
-      package = pkgs.catppuccin-cursors;
-      name = "Mocha Pink";
-    };
+
     targets = {
       kde.enable = true;
       kitty = {
