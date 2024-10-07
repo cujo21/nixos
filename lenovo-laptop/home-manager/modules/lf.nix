@@ -20,7 +20,7 @@
     };
 
     commands = {
-      open = "&$OPENER $f";
+      open = ''&$OPENER "$f"'';
       mkdir = ''
       ''${{
         printf "Directory Name: "
@@ -31,7 +31,9 @@
     };
     
     keybindings = {
-      o = "open";
+      gh = "cd ~";
+      e = ''$$EDITOR "$f"'';
+      o = ''$$OPENER "$f"'';
     };
 
     extraConfig = 

@@ -6,14 +6,10 @@
 			enableZshIntegration = true;
 		};
 
-		font = {
-			name = "JetBrainsMono Nerd Font";
-			size = 12;
-		};
 		extraConfig = "
-			include /home/cujo/nix/lenovo-laptop/home-manager/modules/kitty-themes/catppuccin_mocha.conf
+			#include /home/cujo/nix/lenovo-laptop/home-manager/modules/kitty-themes/catppuccin_mocha.conf
 			shell zsh
-			background_opacity 0.8
+			background_opacity 0.65
 
 			# Window layout
 

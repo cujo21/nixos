@@ -22,7 +22,7 @@
 	      {
 		options = {
 		  icons_enabled = true,
-		  theme = 'catppuccin',
+		  theme = 'auto',
 		  component_separators = { left = '', right = ''},
 		  section_separators = { left = '', right = ''},
 		  disabled_filetypes = {},
@@ -59,26 +59,25 @@
 	    )
 	'';
       }
-      {
-	plugin = catppuccin-nvim;
-	type = "lua";
-	config = ''
-	  require("catppuccin").setup(
-	    {
-	      transparent_background = false,
-	      flavour = "auto",
-	      background = {
-		light = "latte",
-		dark = "mocha",
-	      },
-	      default_integrations = true,
-	      integrations = {
-		nvimtree = true,
-	      },
-	    })
-	'';
-      }
-
+#      {
+#      	plugin = catppuccin-nvim;
+#	type = "lua";
+#	config = ''
+#	  require("catppuccin").setup(
+#	    {
+#	      transparent_background = false,
+#	      flavour = "auto",
+#	      background = {
+#		light = "latte",
+#		dark = "mocha",
+#	      },
+#	      default_integrations = true,
+#	      integrations = {
+#		nvimtree = true,
+#	      },
+#	    })
+#	'';
+#      }
     ];
 
     extraConfig = ''
@@ -94,9 +93,7 @@
       set clipboard+=unnamedplus
       set encoding=UTF-8
       let mapleader = " "
-      colorscheme catppuccin-mocha
 
-      
 
       nnoremap <C-n> :NERDTree
       nnoremap <C-t> :NERDTreeToggle
