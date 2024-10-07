@@ -2,9 +2,9 @@
 
   stylix = {
     enable = true;
-    image = ./wallpaper.jpeg;
+    image = ./gruvbox-dark-blue.png;
     polarity = "dark";
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-material-dark-hard.yaml";
 
     fonts = {
       serif = {
