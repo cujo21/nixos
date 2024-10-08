@@ -2,6 +2,11 @@
 
   programs.plasma = {
     enable = true;
+
+    workspace = {
+      colorScheme = "null";
+    };
+
     hotkeys.commands = {
       "launch-kitty" = {
 	name = "Launch Kitty";

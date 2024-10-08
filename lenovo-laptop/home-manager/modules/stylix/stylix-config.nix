@@ -4,7 +4,7 @@
     enable = true;
     image = ./wallpapers/monogatari_1.png;
     polarity = "dark";
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/pandora.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/gruvbox-material-dark-medium.yaml";
 
     fonts = {
       serif = {
