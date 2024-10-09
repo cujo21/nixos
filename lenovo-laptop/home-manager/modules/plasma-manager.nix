@@ -4,7 +4,7 @@
     enable = true;
 
     workspace = {
-      colorScheme = "null";
+      colorScheme = "GruvboxMaterialDarkMedium";
     };
 
     hotkeys.commands = {

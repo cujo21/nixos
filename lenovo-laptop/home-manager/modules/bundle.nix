@@ -4,7 +4,8 @@
     ./virt-manager.nix
     ./jellyfin-mpv-shim.nix
     ./kitty.nix
-    ./neovim.nix
+    ./nixvim/default.nix
+    #./neovim.nix
     ./mpv.nix
     ./ranger.nix
     ./plasma-manager.nix
