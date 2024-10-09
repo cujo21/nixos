@@ -4,7 +4,7 @@ Hey there! This is my personal nix configuration that I use to manage my current
 
 - NixOS + Home-manager
 - QEMU (Dual GPU/looking-glass.io)
-- Nixvim 
+- NixVim 
     - lualine
     - telescope 
     - neo-tree
