@@ -11,5 +11,5 @@ Hey there! This is my personal nix configuration that I use to manage my current
     - markview 
 - zsh + kitty 
 - Plasma Manager (A minimal Config)
-
+- Stylix
 
