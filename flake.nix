@@ -8,7 +8,6 @@
 	    inputs.nixpkgs.follows = "nixpkgs";
     };
     nix-flatpak.url = "github:gmodena/nix-flatpak";
-    #hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
     plasma-manager = {
       url = "github:nix-community/plasma-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -47,12 +46,6 @@
 		    nix-flatpak.homeManagerModules.nix-flatpak
 		    nixvim.homeManagerModules.nixvim
 		    stylix.homeManagerModules.stylix
-		    #{
-		    #  wayland.windowManager.hyprland = {
-		    #    enable = true;
-		    #    package = inputs.hyprland.packages.${system}.hyprland;
-		    #  };
-		    #}
 		    ./lenovo-laptop/home-manager/home.nix
 		  ];
 	  };		
