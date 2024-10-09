@@ -13,9 +13,9 @@
       preview = true;
       relativenumber = true;
       ratios = [
-	1
-	2
-	3
+				1
+				2
+				3
       ];
     };
 
@@ -33,7 +33,7 @@
     keybindings = {
       gh = "cd ~";
       e = ''$$EDITOR "$f"'';
-      o = ''$$OPENER "$f"'';
+      "<enter>" = ''$$OPENER "$f"'';
     };
 
     extraConfig = 
