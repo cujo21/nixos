@@ -7,9 +7,6 @@
 			settings = {
 				change_to_vcs_root = true;
 				config = {
-					footer = [
-						"Made with ❤️"
-					];
 					header = [
 						"███╗   ██╗██╗██╗  ██╗██╗   ██╗██╗███╗   ███╗"
 						"████╗  ██║██║╚██╗██╔╝██║   ██║██║████╗ ████║"
@@ -19,7 +16,7 @@
 						"╚═╝  ╚═══╝╚═╝╚═╝  ╚═╝  ╚═══╝  ╚═╝╚═╝     ╚═╝"
 					];
 					mru = {
-						limit = 20;
+						limit = 10;
 					};
 					project = {
 						enable = false;
@@ -34,18 +31,6 @@
 							icon = " ";
 							icon_hl = "@variable";
 							key = "f";
-						}
-						{
-							action = "Telescope app";
-							desc = " Apps";
-							group = "DiagnosticHint";
-							key = "a";
-						}
-						{
-							action = "Telescope dotfiles";
-							desc = " dotfiles";
-							group = "Number";
-							key = "d";
 						}
 					];
 					week_header = {
