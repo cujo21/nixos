@@ -5,6 +5,10 @@
 			
 			settings = {
 				options = {
+					disabled_filetypes = {
+						__unkeyed-1 = "neo-tree";
+						__unkeyed-2 = "dashboard";
+					};
 					icons_enabled = true;
 					theme = "auto";
 					globalstatus = true;
