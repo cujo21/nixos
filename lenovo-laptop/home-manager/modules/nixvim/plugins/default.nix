@@ -6,6 +6,7 @@
 		./markview.nix
 		./neo-tree.nix
 		./dashboard.nix
+		./treesitter.nix
 	];
 
 }
