@@ -15,16 +15,17 @@
     };
     stylix = {
 			# url = "github:danth/stylix";
-			url = "github:trueNAHO/stylix/stylix-downgrade-and-lock-tinted-kitty-input";
+			url = "github:danth/stylix/ed91a20c84a80a525780dcb5ea3387dddf6cd2de";
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
     nixvim = {
         url = "github:nix-community/nixvim";
         inputs.nixpkgs.follows = "nixpkgs";
     };
+		hyprland.url = "github:hyprwm/Hyprland";
   };
 
-  outputs = { self, nixpkgs, home-manager, nix-flatpak, plasma-manager, stylix, nixvim, ... } @inputs :
+  outputs = { self, nixpkgs, home-manager, nix-flatpak, plasma-manager, stylix, nixvim, hyprland, ... } @inputs :
 	  let 
 		  system = "x86_64-linux";
 	  in {
@@ -50,6 +51,14 @@
 		    nix-flatpak.homeManagerModules.nix-flatpak
 		    nixvim.homeManagerModules.nixvim
 		    stylix.homeManagerModules.stylix
+				{  
+					wayland.windowManager.hyprland = {
+						enable = true;
+						# set the flake package
+						package = inputs.hyprland.packages.${system}.hyprland;
+					};
+				}
+
 		    ./lenovo-laptop/home-manager/home.nix
 		  ];
 	  };		

@@ -6,7 +6,7 @@
       ./modules/bundle.nix
     ];
 
-  #boot.kernelPackages = pkgs.linuxPackages_latest;
+  # boot.kernelPackages = pkgs.linuxPackages_latest;
   boot.loader = {
     efi = {
       canTouchEfiVariables = true;
@@ -16,6 +16,11 @@
        efiSupport = true;
        device = "nodev";
     };
+  };
+
+  nix.settings = {
+    substituters = ["https://hyprland.cachix.org"];
+    trusted-public-keys = ["hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc="];
   };
 
   nix.settings.experimental-features = ["nix-command" "flakes"]; 
@@ -38,9 +43,9 @@
   services.flatpak.enable = true;
 
   nix.gc = {
-    	automatic = true;
-	dates = "weekly";
-	options = "--delete-older-than 30d";
+		automatic = true;
+		dates = "weekly";
+		options = "--delete-older-than 30d";
   };
 
   services.pipewire = {
@@ -51,7 +56,10 @@
   users.users.cujo = {
      isNormalUser = true;
      extraGroups = [ "wheel" "input" "networkmanager" ];
-   };
+  };
+	
+	programs.hyprland.enable = true;
+	environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
   environment.systemPackages = with pkgs; [
      fastfetch

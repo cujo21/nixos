@@ -3,9 +3,9 @@
   stylix = {
     enable = true;
     autoEnable = true;
-    image = ./wallpapers/wallpaper.jpeg;
+    image = ./wallpapers/monogatari_1.png;
     polarity = "dark";
-		base16Scheme = "${pkgs.base16-schemes}/share/themes/framer.yaml";
+		base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
 
     fonts = {
       serif = {
@@ -25,16 +25,6 @@
 				desktop = 11;
 				popups = 11;
 				terminal = 12;
-      };
-    };
-
-    targets = {
-      kitty = {
-				enable = true;
-				variant256Colors = true;
-      };
-      neovim = {
-				enable = true;
       };
     };
   };

@@ -13,8 +13,8 @@
     ./zsh.nix
     ./stylix/stylix-config.nix
 
-    #./hyprland.nix
+    ./hyprland.nix
     #./appearance.nix
-    #./waybar.nix
+    ./waybar.nix
   ];
 }

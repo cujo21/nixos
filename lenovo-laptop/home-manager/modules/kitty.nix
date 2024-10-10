@@ -7,7 +7,6 @@
 		};
 
 		settings = {
-			#background_opacity = "0.90";
 			shell = "zsh";
 			remember_window_size = false;
 			hide_window_decorations = false;
@@ -17,6 +16,10 @@
 			tab_bar_align = "left";
 			tab_bar_edge = "top";
 		};
+
+		extraConfig = ''
+			background_opacity 0.90
+		'';
 	};
 
 }
