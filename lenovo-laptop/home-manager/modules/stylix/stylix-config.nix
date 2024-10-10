@@ -3,9 +3,9 @@
   stylix = {
     enable = true;
     autoEnable = true;
-    image = ./wallpapers/monogatari_1.png;
+    image = ./wallpapers/wallpaper.jpeg;
     polarity = "dark";
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/rose-pine.yaml";
+		base16Scheme = "${pkgs.base16-schemes}/share/themes/framer.yaml";
 
     fonts = {
       serif = {
