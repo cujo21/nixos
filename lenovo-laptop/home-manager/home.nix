@@ -62,16 +62,6 @@
 	  };
 	};
 
-	#services.flatpak = {
-	#	enable = true;
-	#	packages = [
-	#		{ appId = "com.spotify.Client"; origin = "flathub"; }
-	#		
-	#		"com.logseq.Logseq"
-	#		"com.anydesk.Anydesk"
-	#		"org.onlyoffice.desktopeditors"
-	# 		];
-	#};
 	nixpkgs.config.permittedInsecurePackages = [
                 "electron-27.3.11"
         ];
