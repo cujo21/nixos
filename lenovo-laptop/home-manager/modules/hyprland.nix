@@ -42,6 +42,7 @@
 				[
 				"XCURSOR_SIZE,16"
 				"GTK_THEME,adw-gtk3"
+				"HYPRCURSOR_SIZE,16"
 				];
 		};
     extraConfig = "
