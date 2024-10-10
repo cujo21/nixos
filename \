@@ -33,7 +33,6 @@
 				"hyprland/window" = {
 					rewrite = {
 						"(.*) — Mozilla Firefox" = "󰈹  $1";
-						"Spotify Premium" = "󰓇 ";
 					};
 					separate-outputs = true;
 				};
