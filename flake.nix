@@ -13,7 +13,8 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.home-manager.follows = "home-manager";
     };
-    stylix = { 
+    stylix = {
+			# url = "github:danth/stylix";
 			url = "github:trueNAHO/stylix/stylix-downgrade-and-lock-tinted-kitty-input";
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
