@@ -13,7 +13,7 @@
 					"$mod, T, exec, kitty"
 					"$mod, SPACE, exec, rofi -show drun"
 
-								"$mod, 1, workspace, 1"
+					"$mod, 1, workspace, 1"
 					"$mod, 2, workspace, 2"
 					"$mod, 3, workspace, 3"
 					"$mod, 4, workspace, 4"
@@ -35,6 +35,9 @@
 					)
 					9)
 				);
+			bindm = [
+					"$mod, mouse:272, movewindow"
+			];
       env = 
 				[
 				"XCURSOR_SIZE,16"
