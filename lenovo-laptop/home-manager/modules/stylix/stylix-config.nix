@@ -9,12 +9,12 @@
 
     fonts = {
       serif = {
-				package = pkgs.roboto;
-				name = "Roboto";
+				package = pkgs.jetbrains-mono;
+				name = "JetBrainsMono Nerd Font";
       };
       sansSerif = {
-				package = pkgs.roboto;
-				name = "Roboto";
+				package = pkgs.jetbrains-mono;
+				name = "JetBrainsMono Nerd Font";
       };
       monospace = {
 				package = pkgs.jetbrains-mono;

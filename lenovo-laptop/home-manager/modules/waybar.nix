@@ -1,14 +1,23 @@
 {pkgs, ...}: {
 
+	home.packages = with pkgs; [
+		wlogout
+	];
+
 	programs.waybar = {
 		enable = true;
 		systemd.enable = true;
 
 		style = ''
-			window#waybar {
-				background: transparent;
-				border-bottom: none;
+			* {
+				border: none;
+				border-radius: 4px;
 			}
+			
+			#battery {
+				padding: 5px;
+			}
+
 		'';
 
 		settings = {
@@ -34,17 +43,24 @@
 
 				modules-right = [ 
 					"tray" 
-					"battery"
-					"pulseaudio"
 					"cpu"
+					"pulseaudio"
+					"battery"
+					"custom/wlogout"
 				];
 
+				"custom/wlogout" = {
+					format = "  ";
+					interval = "once";
+					on-click = "wlogout -c 5 -r 5 -p layer-shell";
+				};
+
 				"battery" = {
-					format = "{capacity}% {icon}";
-					format-alt = "{time} {icon}";
-					format-charging = "{capacity}% ";
+					format = "{capacity}% {icon}  ";
+					format-alt = "{time} {icon}  ";
+					format-charging = "{capacity}%   ";
 					format-icons = [ "" "" "" "" "" ];
-					format-plugged = "{capacity}% ";
+					format-plugged = "{capacity}%   ";
 					states = {
 						critical = 15;
 						warning = 30;
@@ -87,8 +103,6 @@
 					format = "{usage}% ";
 					tooltip = false;
 				};
-
-				memory = { format = "{}% "; };
 			};
 		};
 	};
