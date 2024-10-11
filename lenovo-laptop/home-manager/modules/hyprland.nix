@@ -12,6 +12,7 @@
 					", Print, exec, grimblast copy area"
 					"$mod, T, exec, kitty"
 					"$mod, SPACE, exec, rofi -show drun"
+					"$mod, G, exec, thunar"
 
 					"$mod, 1, workspace, 1"
 					"$mod, 2, workspace, 2"
