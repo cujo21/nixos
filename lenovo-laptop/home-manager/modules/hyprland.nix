@@ -14,11 +14,10 @@
       "$mod" = "SUPER";
 			
 			general = {
-				gaps_in = 3;
-				gaps_out = 3;
+				gaps_in = 0;
+				gaps_out = 0;
 			};
 			decoration = {
-				rounding = "5";
 				blur = {
 					enabled = true;
 					size = 8;
@@ -49,11 +48,11 @@
 					"$mod, 3, workspace, 3"
 					"$mod, 4, workspace, 4"
 					"$mod, 5, workspace, 5"
-					"$mod&Shift_L, 1, movetoworkspacesilent, 1"
-					"$mod&Shift_L, 2, movetoworkspacesilent, 2"
-					"$mod&Shift_L, 3, movetoworkspacesilent, 3"
-					"$mod&Shift_L, 4, movetoworkspacesilent, 4"
-					"$mod&Shift_L, 5, movetoworkspacesilent, 5"
+					"$mod&Shift_L, 1, movetoworkspace, 1"
+					"$mod&Shift_L, 2, movetoworkspace, 2"
+					"$mod&Shift_L, 3, movetoworkspace, 3"
+					"$mod&Shift_L, 4, movetoworkspace, 4"
+					"$mod&Shift_L, 5, movetoworkspace, 5"
 
 					"$mod, Q, killactive,"
 					"$mod, M, exit,"
