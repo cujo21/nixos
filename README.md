@@ -12,4 +12,4 @@ Hey there! This is my personal nix configuration that I use to manage my current
 - zsh + kitty 
 - Plasma Manager (A minimal Config)
 - Stylix
-
+- Hyprland + Waybar
