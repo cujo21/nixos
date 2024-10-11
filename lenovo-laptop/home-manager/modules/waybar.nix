@@ -11,7 +11,7 @@
 		style = ''
 			* {
 				border: none;
-				border-radius: 4px;
+				border-radius: 0px;
 			}
 			
 			window#waybar {
