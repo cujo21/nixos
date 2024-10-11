@@ -47,6 +47,7 @@
 			lsd
 			ocs-url
 			mimeo
+			zathura
 		];
 	};
 	
