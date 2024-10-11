@@ -41,6 +41,7 @@
   time.timeZone = "Asia/Kolkata";
 
   services.flatpak.enable = true;
+	services.blueman.enable = true;
 
   nix.gc = {
 		automatic = true;
@@ -60,6 +61,10 @@
 	
 	programs.hyprland.enable = true;
 	environment.sessionVariables.NIXOS_OZONE_WL = "1";
+	programs.nm-applet = {
+		enable = true;
+		indicator = true;
+	};
 
   environment.systemPackages = with pkgs; [
      fastfetch

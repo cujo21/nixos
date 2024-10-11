@@ -14,6 +14,11 @@
 				border-radius: 4px;
 			}
 			
+			window#waybar {
+				background: transparent;
+				margin: 5px;
+			}
+		
 			#battery {
 				padding: 5px;
 			}
@@ -85,22 +90,22 @@
 					format-bluetooth = "{volume}% {icon} {format_source}";
 					format-bluetooth-muted = " {icon} {format_source}";
 					format-icons = {
-						car = "";
-						default = [ "" "" "" ];
-						handsfree = "";
-						headphones = "";
-						headset = "";
-						phone = "";
-						portable = "";
+						car = "  ";
+						default = [ " " "  " "  " ];
+						handsfree = "  ";
+						headphones = "  ";
+						headset = "  ";
+						phone = "  ";
+						portable = "  ";
 					};
 					format-muted = " {format_source}";
-					format-source = "{volume}% ";
+					format-source = "{volume}%  ";
 					format-source-muted = "";
 					on-click = "pavucontrol";
 				};
 
 				cpu = {
-					format = "{usage}% ";
+					format = "  {usage}%   ";
 					tooltip = false;
 				};
 			};

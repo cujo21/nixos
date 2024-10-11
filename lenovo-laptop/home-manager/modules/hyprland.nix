@@ -2,7 +2,13 @@
 
   home.packages = with pkgs; [
     rofi-wayland-unwrapped
+		pavucontrol
   ];
+
+	services = {
+		blueman-applet.enable = true;
+	};
+
   wayland.windowManager.hyprland = {
     settings = {
       "$mod" = "SUPER";
@@ -19,6 +25,11 @@
 					"$mod, 3, workspace, 3"
 					"$mod, 4, workspace, 4"
 					"$mod, 5, workspace, 5"
+					"$mod&Shift_L, 1, movetoworkspacesilent, 1"
+					"$mod&Shift_L, 2, movetoworkspacesilent, 2"
+					"$mod&Shift_L, 3, movetoworkspacesilent, 3"
+					"$mod&Shift_L, 4, movetoworkspacesilent, 4"
+					"$mod&Shift_L, 5, movetoworkspacesilent, 5"
 
 					"$mod, Q, killactive,"
 					"$mod, M, exit,"
