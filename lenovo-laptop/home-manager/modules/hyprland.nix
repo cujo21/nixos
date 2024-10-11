@@ -12,6 +12,30 @@
   wayland.windowManager.hyprland = {
     settings = {
       "$mod" = "SUPER";
+			
+			general = {
+				gaps_in = 3;
+				gaps_out = 3;
+			};
+			decoration = {
+				rounding = "5";
+				blur = {
+					enabled = true;
+					size = 8;
+				};
+			};
+			input = {
+				touchpad = {
+					natural_scroll = true;
+				};
+			};
+			gestures = {
+				workspace_swipe = true;
+			};
+			misc = {
+				disable_hyprland_logo = true;
+			};
+
       bind =
 				[
 					"$mod, F, exec, firefox"
