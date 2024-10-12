@@ -15,7 +15,7 @@
     };
     stylix = {
 			url = "github:danth/stylix";
-			# url = "github:danth/stylix/ed91a20c84a80a525780dcb5ea3387dddf6cd2de";
+			# url = "github:danth/stylix/ed91a20c84a80a525780dcb5ea3387dddf6cd2de"; # Old Tinted Base 16 scheme fix
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
     nixvim = {
