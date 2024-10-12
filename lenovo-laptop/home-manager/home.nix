@@ -43,7 +43,6 @@
 			ghostwriter
 			strawberry
 			streamrip
-			lollypop
 			lsd
 			ocs-url
 			mimeo
