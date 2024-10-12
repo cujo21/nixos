@@ -3,6 +3,8 @@
   home.packages = with pkgs; [
     rofi-wayland-unwrapped
 		pavucontrol
+    qt5ct
+		qt6ct
   ];
 
 	services = {
@@ -72,12 +74,15 @@
 				);
 			bindm = [
 					"$mod, mouse:272, movewindow"
+					"$mod, mouse:273, resizewindow"
 			];
       env = 
 				[
 				"XCURSOR_SIZE,16"
 				"GTK_THEME,adw-gtk3"
 				"HYPRCURSOR_SIZE,16"
+				"QT_QPA_PLATFORMTHEME,qt5ct"
+				"QT_QPA_PLATFORM,wayland"
 				];
 		};
     extraConfig = "

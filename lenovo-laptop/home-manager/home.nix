@@ -47,7 +47,7 @@
 			lsd
 			ocs-url
 			mimeo
-			zathura
+			lollypop
 		];
 	};
 	
