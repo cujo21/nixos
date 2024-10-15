@@ -39,7 +39,8 @@
         };
 	
   time.timeZone = "Asia/Kolkata";
-
+	
+	services.gvfs.enable = true;
   services.flatpak.enable = true;
 	services.blueman.enable = true;
 

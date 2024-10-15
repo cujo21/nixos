@@ -14,22 +14,26 @@
 
     fonts = {
       serif = {
-				package = pkgs.ubuntu-sans-mono;
-				name = "UbuntuSansMono Nerd Font";
+				package = pkgs.roboto;
+				name = "Roboto Nerd Font";
       };
       sansSerif = {
-				package = pkgs.ubuntu-sans-mono;
-				name = "UbuntuSansMono Nerd Font";
+				package = pkgs.roboto;
+				name = "Roboto Nerd Font";
       };
       monospace = {
-				package = pkgs.ubuntu-sans-mono;
-				name = "UbuntuSansMono Nerd Font";
+				package = pkgs.roboto-mono;
+				name = "RobotoMono Nerd Font";
       };
+			emoji = {
+				package = pkgs.noto-fonts-emoji;
+				name = "Noto Color Emoji";
+			};
       sizes = {
-				applications = 11;
-				desktop = 11;
-				popups = 11;
-				terminal = 11;
+				applications = 12;
+				desktop = 12;
+				popups = 12;
+				terminal = 12;
       };
     };
 

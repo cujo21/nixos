@@ -12,6 +12,7 @@
     ./lf.nix
     ./zsh.nix
     ./stylix/stylix-config.nix
+		./rofi/rofi.nix
 
     ./hyprland.nix
     #./appearance.nix

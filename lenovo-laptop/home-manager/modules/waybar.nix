@@ -55,7 +55,7 @@
 				];
 
 				"custom/wlogout" = {
-					format = "  ";
+					format = "⏻ ";
 					interval = "once";
 					on-click = "wlogout -c 5 -r 5 -p layer-shell";
 				};
