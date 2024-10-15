@@ -13,7 +13,6 @@
 			tree
 			pciutils
 			looking-glass-client
-			spotify
 			vscodium
 			logseq
 			git

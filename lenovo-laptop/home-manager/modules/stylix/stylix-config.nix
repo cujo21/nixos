@@ -14,22 +14,22 @@
 
     fonts = {
       serif = {
-				package = pkgs.jetbrains-mono;
-				name = "JetBrainsMono Nerd Font";
+				package = pkgs.ubuntu-sans-mono;
+				name = "UbuntuSansMono Nerd Font";
       };
       sansSerif = {
-				package = pkgs.jetbrains-mono;
-				name = "JetBrainsMono Nerd Font";
+				package = pkgs.ubuntu-sans-mono;
+				name = "UbuntuSansMono Nerd Font";
       };
       monospace = {
-				package = pkgs.jetbrains-mono;
-				name = "JetBrainsMono Nerd Font";
+				package = pkgs.ubuntu-sans-mono;
+				name = "UbuntuSansMono Nerd Font";
       };
       sizes = {
-				applications = 12;
-				desktop = 12;
-				popups = 12;
-				terminal = 12;
+				applications = 11;
+				desktop = 11;
+				popups = 11;
+				terminal = 11;
       };
     };
 
