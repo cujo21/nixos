@@ -1,9 +1,11 @@
 {pkgs, ... }: {
 
   home.packages = with pkgs; [
-		pavucontrol
+		pavucontrol	
     qt5ct
 		qt6ct
+		hyprshot
+		lxqt.lxqt-policykit
   ];
 
 	services = {
@@ -39,7 +41,6 @@
       bind =
 				[
 					"$mod, F, exec, firefox"
-					", Print, exec, grimblast copy area"
 					"$mod, T, exec, kitty"
 					"$mod, SPACE, exec, rofi -show drun"
 					"$mod, G, exec, thunar"
@@ -58,6 +59,10 @@
 					"$mod, Q, killactive,"
 					"$mod, M, exit,"
 					"$mod&Shift_L, F, togglefloating,"
+
+					", PRINT, exec, hyprshot -m output"
+					"$mod, PRINT, exec, hyprshot -m window"
+					"$mod&Shift_L, PRINT, exec, hyprshot -m region"
 				]
 				++ (
 				# workspaces
@@ -82,10 +87,12 @@
 				"HYPRCURSOR_SIZE,16"
 				"QT_QPA_PLATFORMTHEME,qt5ct"
 				"QT_QPA_PLATFORM,wayland"
+				"HYPRSHOT_DIR, ./hyprshot" 
 				];
 		};
     extraConfig = "
       monitor = eDP-1, 1920x1080@165.00Hz, 0x0, 1
+			exec-once = lxqt-policykit-agent
     ";
   };
 }
