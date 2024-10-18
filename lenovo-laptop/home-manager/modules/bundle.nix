@@ -12,11 +12,11 @@
     ./lf.nix
     ./zsh.nix
     ./stylix/stylix-config.nix
-		./rofi/rofi.nix
-	
-    ./hyprland.nix
+		
+		#./rofi/rofi.nix
+    #./hyprland.nix
     #./appearance.nix
-    ./waybar.nix
-		./dunst.nix
+    #./waybar.nix
+		#./dunst.nix
   ];
 }

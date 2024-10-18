@@ -53,6 +53,7 @@
   services.pipewire = {
     enable = true;
     pulse.enable = true;
+		wireplumber.enable = true;
     };
 
   users.users.cujo = {
@@ -60,12 +61,12 @@
      extraGroups = [ "wheel" "input" "networkmanager" ];
   };
 	
-	programs.hyprland.enable = true;
-	environment.sessionVariables.NIXOS_OZONE_WL = "1";
-	programs.nm-applet = {
-		enable = true;
-		indicator = true;
-	};
+	#programs.hyprland.enable = true;
+	#environment.sessionVariables.NIXOS_OZONE_WL = "1";
+	#programs.nm-applet = {
+	#	enable = true;
+	#	indicator = true;
+	#};
 
   environment.systemPackages = with pkgs; [
      fastfetch
@@ -73,6 +74,7 @@
      inter
      kitty
      iwd
+		 jmtpfs
   ];
 
   nixpkgs.config.allowUnfree = true;

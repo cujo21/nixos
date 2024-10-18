@@ -6,6 +6,7 @@
 		qt6ct
 		hyprshot
 		lxqt.lxqt-policykit
+		brillo
   ];
 
 	services = {

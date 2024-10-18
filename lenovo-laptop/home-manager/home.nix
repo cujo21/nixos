@@ -46,6 +46,7 @@
 			ocs-url
 			mimeo
 			lollypop
+			rclone
 		];
 	};
 	
