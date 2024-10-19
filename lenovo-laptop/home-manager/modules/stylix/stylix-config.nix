@@ -4,7 +4,7 @@
     enable = true;
     image = ./wallpapers/monogatari_1.png;
     polarity = "dark";
-		base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
+		base16Scheme = "${pkgs.base16-schemes}/share/themes/rose-pine.yaml";
 		opacity = {
 			applications = 0.8;
 			terminal = 0.8;

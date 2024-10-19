@@ -4,7 +4,7 @@
     enable = true;
 	
 	workspace = {
-		colorScheme = "CatppuccinMocha";
+		colorScheme = "RosPine";
 	};
 
   hotkeys.commands = {
