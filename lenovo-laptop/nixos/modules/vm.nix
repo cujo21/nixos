@@ -2,7 +2,7 @@
 
 { 
   
-  boot.kernelParams = [ "amd_iommu=on" "iommu=pt" "isolcpus=0-7" ]; 
+  boot.kernelParams = [ "amd_iommu=on" "iommu=pt" ]; 
   boot.kernelModules = [ "kvm-amd" "vfio_virqfd" "vfio_pci" "vfio_iommu_type1" "vfio" "nbd" ];
   boot.extraModprobeConfig = ''
   options vfio-pci ids=10de:2560,10de:228e

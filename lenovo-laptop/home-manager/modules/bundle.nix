@@ -8,7 +8,7 @@
     #./neovim.nix
     ./mpv.nix
     ./ranger.nix
-    ./plasma-manager.nix
+    #./plasma-manager.nix
     ./lf.nix
     ./zsh.nix
     ./stylix/stylix-config.nix

@@ -5,6 +5,10 @@
 	
 	workspace = {
 		colorScheme = "RosPine";
+		splashScreen = {
+			engine = "none";
+			theme = "None";
+		};
 	};
 
   hotkeys.commands = {

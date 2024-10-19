@@ -6,10 +6,10 @@
     polarity = "dark";
 		base16Scheme = "${pkgs.base16-schemes}/share/themes/rose-pine.yaml";
 		opacity = {
-			applications = 0.8;
-			terminal = 0.8;
-			desktop = 0.8;
-			popups = 0.8;
+			applications = 1.0;
+			terminal = 1.0;
+			desktop = 1.0;
+			popups = 1.0;
 		};
 
     fonts = {
