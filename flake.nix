@@ -51,13 +51,13 @@
 		    nix-flatpak.homeManagerModules.nix-flatpak
 		    nixvim.homeManagerModules.nixvim
 		    stylix.homeManagerModules.stylix
-				#{  
-				#	wayland.windowManager.hyprland = {
-				#		enable = true;
-				#		# set the flake package
-				#		package = inputs.hyprland.packages.${system}.hyprland;
-				#	};
-				#}
+				{  
+					wayland.windowManager.hyprland = {
+						enable = true;
+						# set the flake package
+						package = inputs.hyprland.packages.${system}.hyprland;
+					};
+				}
 		    ./lenovo-laptop/home-manager/home.nix
 		  ];
 	  };		
