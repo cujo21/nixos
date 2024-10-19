@@ -6,7 +6,8 @@
       ./modules/bundle.nix
     ];
 
-  # boot.kernelPackages = pkgs.linuxPackages_latest;
+  boot.kernelPackages = pkgs.linuxPackages_latest;
+	boot.kernelParams = [ "quiet" "splash" ];
   boot.loader = {
     efi = {
       canTouchEfiVariables = true;
@@ -43,6 +44,7 @@
 	services.gvfs.enable = true;
   services.flatpak.enable = true;
 	services.blueman.enable = true;
+	systemd.services."cujo".serviceConfig.Delegate = "cpuset";
 
   nix.gc = {
 		automatic = true;
